@@ -1,6 +1,8 @@
 #!/bin/bash
 
 PACKAGES=(
+  "chezmoi"
+
   # IMPORTANT
   "niri"
   "dms-shell-bin"
@@ -9,20 +11,37 @@ PACKAGES=(
   "sddm-silent-theme"
 
   # Essentials
+  "qt5ct"
+  "qt6ct"
+  "darkly"
+  "papirus-icon-theme"
+  "papirus-folders-catppuccin-git"
+  "dolphin"
+  "archlinux-xdg-menu"
+  "xdg-desktop-portal-kde" # Use KDE for most portals instead of ugly Gnome/GTK
+
   "yazi"
+  "xdg-desktop-portal-termfilechooser-hunkyburrito-git" # Use `yazi` for the File Chooser portal
+
   "microsoft-edge-stable-bin"
+
   "ttf-jetbrains-mono-nerd"
   "bibata-cursor-theme-bin"
   "fcitx5-im"
   "fcitx5-bamboo"
   "whitesur-gtk-theme"
 
-  # Security
+  "ntfs-3g" # Mount NTFS (Windows) partitions
+
+  # Security & Privacy
+  "bitwarden"
   "1password"
+  "cloudflare-warp-bin"
+  "proton-vpn-gtk-app"
 
   # Terminal
   "kitty"
-  "alacritty" # Just for backup
+  "alacritty" # For backup after `kitty`
   "tmux"
   "mise"
   "starship"
@@ -30,35 +49,34 @@ PACKAGES=(
   "fish"
   "lazygit"
   "git-delta" # For `lazygit` diff view
-  "nvim"
-  "zed"
   "dust"
   "tokei"
   "jdupes" # `yazi` plugin
   "ouch" # `yazi` plugin
 
   # Development
+  "nvim"
+  "zed"
+
   "rustup"
   "libyaml" # To install ruby
   "postgresql"
-  "duckdb"
+  "duckdb-bin"
 
   # File Transfer
   "syncthing"
-  "qbittorent"
+  "qbittorrent"
   "xdman-beta-bin"
 
   # Media & Utilities
+  "wayscriber"
   "qimgv"
   "gimp"
   "vlc"
   "mpv"
   "spotify"
   "obsidian"
-
-  # Privacy
-  "cloudflare-vpn-gtk-app"
-  "proton-vpn-gtk-app"
+  "rustdesk"
 
   # Social
   "ferdium-bin"
@@ -66,17 +84,16 @@ PACKAGES=(
 
   # Extras
   "vivaldi"
-  "ntfs-3g" # Mount NTFS (Windows) partitions
 )
 paru -S "${PACKAGES[@]}"
 
-# Yazi - install plugins
+# [yazi] install plugins
 ya pkg install
 
-# Tmux - install plugins
+# [tmux] install plugins
 ~/.tmux/plugins/tpm/bin/install_plugins
 
-# Mise - install runtimes
+# [mise] install runtimes
 mise install
 
 
