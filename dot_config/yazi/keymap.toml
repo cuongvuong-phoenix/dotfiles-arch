@@ -1,0 +1,110 @@
+# ---------------- Generals ----------------
+[[mgr.prepend_keymap]]
+on = "A"
+run = "create --dir"
+desc = "Copy selected files to the system clipboard while yanking"
+
+[[mgr.prepend_keymap]]
+on = ["c", "r"]
+run = "plugin path-from-root"
+desc = "Copy path from git root"
+
+[[mgr.prepend_keymap]]
+on = "z"
+run = "plugin zoxide"
+desc = "Jump to a directory via zoxide"
+
+[[mgr.prepend_keymap]]
+on = "<C-p>"
+run = "plugin fzf"
+desc = "Jump to a file/directory via fzf"
+
+# ---------------- Copy/Paste ----------------
+# Linux (Wayland) only
+[[mgr.prepend_keymap]]
+on = "y"
+run = [
+  'shell -- for path in "$@"; do echo "file://$path"; done | wl-copy -t text/uri-list',
+  "yank",
+]
+desc = "Copy selected files to the system clipboard while yanking"
+
+[[mgr.prepend_keymap]]
+on = "p"
+run = "plugin smart-paste"
+desc = "Paste into the hovered directory or CWD"
+
+[[mgr.prepend_keymap]]
+on = "P"
+run = "paste"
+desc = "Paste to the current directory"
+
+# ---------------- Utilities ----------------
+[[mgr.prepend_keymap]]
+on = "t"
+run = "plugin smart-tab"
+desc = "Create a tab and enter the hovered directory"
+
+[[mgr.prepend_keymap]]
+on = "M"
+run = "plugin toggle-pane max-preview"
+desc = "Maximize or restore the preview pane"
+
+[[mgr.prepend_keymap]]
+on = ["C"]
+run = "plugin ouch"
+desc = "Compress with ouch"
+
+[[mgr.prepend_keymap]]
+on = "E"
+run = "plugin mount"
+desc = "Open mount manager"
+
+[[mgr.prepend_keymap]]
+on = ["c", "m"]
+run = "plugin chmod"
+desc = "Chmod on selected files"
+
+# ---------------- DuckDB ----------------
+# Temporarily disable as it's being stuck at 99% while prefetching
+
+# [[mgr.prepend_keymap]]
+# on = "H"
+# run = "plugin duckdb -1"
+# desc = "Scroll one column to the left"
+#
+# [[mgr.prepend_keymap]]
+# on = "L"
+# run = "plugin duckdb +1"
+# desc = "Scroll one column to the right"
+#
+# [[mgr.prepend_keymap]]
+# on = ["g", "o"]
+# run = "plugin duckdb -open"
+# desc = "open with duckdb"
+#
+# [[mgr.prepend_keymap]]
+# on = ["g", "u"]
+# run = "plugin duckdb -ui"
+# desc = "open with duckdb ui"
+
+# ---------------- Dedups ----------------
+[[mgr.prepend_keymap]]
+on = ["<A-J>", "i"]
+run = "plugin dupes interactive"
+desc = "Run dupes interactive"
+
+[[mgr.prepend_keymap]]
+on = ["<A-J>", "o"]
+run = "plugin dupes override"
+desc = "Run dupes override"
+
+[[mgr.prepend_keymap]]
+on = ["<A-J>", "d"]
+run = "plugin dupes dry"
+desc = "Run dupes dry"
+
+[[mgr.prepend_keymap]]
+on = ["<A-J>", "a"]
+run = "plugin dupes apply"
+desc = "Run dupes apply"

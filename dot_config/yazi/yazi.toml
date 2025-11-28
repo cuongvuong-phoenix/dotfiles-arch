@@ -1,0 +1,55 @@
+[mgr]
+show_hidden = true
+
+[opener]
+extract = [
+  { run = 'ouch d -y "$@"', desc = "Extract here with ouch", for = "unix" },
+  { run = 'ouch d -y %*', desc = "Extract here with ouch", for = "windows" },
+]
+
+[preview]
+max_width = 1920
+max_height = 1080
+
+
+[plugin]
+prepend_fetchers = [
+  { id = "git", name = "*", run = "git" },
+  { id = "git", name = "*/", run = "git" },
+]
+prepend_previewers = [
+  # DuckDB previewer
+  # { name = "*.csv", run = "duckdb" },
+  # { name = "*.tsv", run = "duckdb" },
+  # { name = "*.json", run = "duckdb" },
+  # { name = "*.parquet", run = "duckdb" },
+  # { name = "*.txt", run = "duckdb" },
+  # { name = "*.xlsx", run = "duckdb" },
+  # { name = "*.db", run = "duckdb" },
+  # { name = "*.duckdb", run = "duckdb" },
+
+  # Archive previewer
+  { mime = "application/*zip", run = "ouch" },
+  { mime = "application/x-tar", run = "ouch" },
+  { mime = "application/x-bzip2", run = "ouch" },
+  { mime = "application/x-7z-compressed", run = "ouch" },
+  { mime = "application/x-rar", run = "ouch" },
+  { mime = "application/vnd.rar", run = "ouch" },
+  { mime = "application/x-xz", run = "ouch" },
+  { mime = "application/xz", run = "ouch" },
+  { mime = "application/x-zstd", run = "ouch" },
+  { mime = "application/zstd", run = "ouch" },
+  { mime = "application/java-archive", run = "ouch" },
+]
+#append_previewers = [
+#  { name = "*", run = "hexyl" },
+#]
+
+prepend_preloaders = [
+  # { name = "*.csv", run = "duckdb", multi = false },  
+  # { name = "*.tsv", run = "duckdb", multi = false },  
+  # { name = "*.json", run = "duckdb", multi = false },  
+  # { name = "*.parquet", run = "duckdb", multi = false },
+  # { name = "*.txt", run = "duckdb", multi = false },  
+  # { name = "*.xlsx", run = "duckdb", multi = false }
+]
