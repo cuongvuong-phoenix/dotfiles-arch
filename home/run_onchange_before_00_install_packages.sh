@@ -11,9 +11,10 @@ PACKAGES=(
   "sddm-silent-theme"
 
   # Essentials
+  "awww-git"
   "qt5ct"
   "qt6ct"
-  "darkly"
+  "darkly-bin"
   "papirus-icon-theme"
   "papirus-folders-catppuccin-git"
   "dolphin"
@@ -69,14 +70,14 @@ PACKAGES=(
   "xdman-beta-bin"
 
   # Media & Utilities
-  "wayscriber"
+  "wayscriber-bin"
   "qimgv"
   "gimp"
   "vlc"
   "mpv"
   "spotify"
   "obsidian"
-  "rustdesk"
+  "rustdesk-bin"
 
   # Social
   "ferdium-bin"
