@@ -1,9 +1,16 @@
 // ---------------- CORE ----------------
+// Run `niri msg outputs` to see all available outputs.
+{{ if eq .chezmoi.hostname "PHOENIX-PCLIN01" }}
 output "HDMI-A-1" {
-    // Run `niri msg outputs` to see all available modes.
     mode "3840x2160@143.988"
     scale 1.5
 }
+{{ else if eq .chezmoi.hostname "PHOENIX-LTLIN01" }}
+output "eDP-2" {
+    mode "3072x1920@120.002"
+    scale 1.5
+}
+{{ end }}
 
 
 input {
