@@ -97,3 +97,6 @@ ya pkg install
 # [mise] install runtimes
 mise install
 
+# [Rust] Install nightly toolchain
+rustup toolchain install nightly
+rustup default nightly
