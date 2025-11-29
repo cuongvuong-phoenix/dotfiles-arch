@@ -2,10 +2,8 @@
 
 ## Setup
 
-Using `chezmoi` to init this repository:
-
 ```bash
-sh -c "$(curl -fsLS get.chezmoi.io)" -- init --apply $GITHUB_USERNAME
+sh -c "$(curl -fsLS get.chezmoi.io)" -- init --apply git@github.com:cuongvuong-phoenix/dotfiles-arch.git
 ```
 
 ## Manual steps
@@ -31,7 +29,7 @@ QT_QPA_PLATFORMTHEME="qt6ct"
 	- **Standard dialogs**: XDG Desktop Portal
 	- **Icon Theme**: Papirus-Dark
 3. **Sync `qt6ct` settings with KDE global settings** (to make KDE apps look the same): Edit these lines within `~/.config/kdeglobals`
-	```TOML
+	```config
 	[General]
 	widgetStyle=qt6ct-style
 	ColorScheme=qt6ct
