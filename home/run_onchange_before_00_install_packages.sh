@@ -85,7 +85,7 @@ PACKAGES=(
   # Extras
   "vivaldi"
 )
-paru -S "${PACKAGES[@]}"
+paru -Syu --needed "${PACKAGES[@]}"
 
 # [yazi] install plugins
 ya pkg install
@@ -95,5 +95,4 @@ ya pkg install
 
 # [mise] install runtimes
 mise install
-
 
