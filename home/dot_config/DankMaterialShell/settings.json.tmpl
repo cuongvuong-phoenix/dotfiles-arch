@@ -150,7 +150,11 @@
     {
       "id": "clock",
       "enabled": true
-    }
+    }{{ if eq .chezmoi.hostname "PHOENIX-LTLIN01" }},
+    {
+      "id": "battery",
+      "enabled": true
+    }{{ end }}
   ],
   "dankBarWidgetOrder": [],
   "appLauncherViewMode": "list",
