@@ -1,0 +1,32 @@
+[include]
+	path = ~/.delta--one-dark-pro.gitconfig
+[color]
+	diff = auto
+	status = auto
+	branch = auto
+[core]
+	autocrlf = input
+	editor = nvim
+	pager = delta
+[apply]
+	whitespace = nowarn
+[branch]
+	autosetuprebase = always
+[interactive]
+	diffFilter = delta --color-only --true-color=always
+[delta]
+	navigate = true
+	side-by-side = true
+	true-color = always
+	features = one-dark-pro
+[merge]
+	conflictstyle = zdiff3
+[alias]
+	lg = lg2
+	lg1 = lg1-specific --all
+	lg2 = lg2-specific --all
+	lg1-specific = log --color --graph --decorate --abbrev-commit --pretty=format:'%C(auto)%h%C(reset) -%C(auto)%d%C(reset) %C(white)%s%C(reset) %C(dim cyan)- (%cr) %C(dim white)<%ae>%C(reset)%n'
+	lg2-specific = log --color --graph --decorate --abbrev-commit --pretty=format:'%C(auto)%h%C(reset) - %C(magenta)%cD%C(reset) %C(dim cyan)(%cr)%C(reset) %C(auto)%d%C(reset)%n''          %C(white)%s%C(reset) %C(dim white)- <%ae>%C(reset)%n'
+[user]
+	email = cuongvuong.phoenix@gmail.com
+	name = Cuong Phoenix
