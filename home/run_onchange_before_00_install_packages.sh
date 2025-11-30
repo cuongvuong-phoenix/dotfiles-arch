@@ -1,6 +1,6 @@
 #!/bin/bash
 
-printf "\n==== Install packages ====\n"
+printf "\n======== Install packages ========\n"
 PACKAGES=(
   "chezmoi"
 
@@ -47,6 +47,9 @@ PACKAGES=(
   "alacritty" # For backup after `kitty`
   "tmux"
   "mise"
+  "ripgrep"
+  "fd"
+  "eza"
   "starship"
   "zoxide"
   "fish"
