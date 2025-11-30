@@ -102,7 +102,11 @@ environment {
 
 // ---------------- Workspaces ----------------
 workspace "Home"
-workspace "Chat"
+workspace "Chat" {
+    layout {
+        center-focused-column "on-overflow"
+    }
+}
 workspace "Dev"
 workspace "Work (Holistics)"
 workspace "Work (Holistics - Design System)"
@@ -164,6 +168,7 @@ window-rule {
 window-rule {
     match app-id="microsoft-edge"
     match app-id="obsidian"
+    match app-id="org.telegram.desktop"
 
     default-column-width { proportion 0.75; }
 }
@@ -296,7 +301,7 @@ binds {
     // === Window Management ===
     Mod+Q repeat=false { close-window; }
     Mod+F { maximize-column; }
-    Mod+Shift+F { fullscreen-window; }
+    Mod+Shift+F { maximize-window-to-edges; }
     Mod+Shift+T { toggle-window-floating; }
     Mod+Shift+V { switch-focus-between-floating-and-tiling; }
     Mod+W { toggle-column-tabbed-display; }
