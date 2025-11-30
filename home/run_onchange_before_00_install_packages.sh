@@ -64,14 +64,19 @@ PACKAGES=(
   # Development
   "nvim"
   "zed"
+  "android-studio"
 
+  "just"
   "rustup"
+  "mold" # Fastest linker to improve Rust compile time
+  "clang"
+  "sccache"
   "go"
   "libyaml" # To install ruby
   "postgresql"
   "duckdb-bin"
 
-  "android-studio"
+  "claude-code"
 
   # File Transfer
   "syncthing"
@@ -87,7 +92,7 @@ PACKAGES=(
   "spotify"
   "obsidian"
   "rustdesk-bin"
-  "qdirstat"
+  "qdirstat-bin"
 
   # Social
   "ferdium-bin"
