@@ -60,6 +60,7 @@ PACKAGES=(
   "zed"
 
   "rustup"
+  "go"
   "libyaml" # To install ruby
   "postgresql"
   "duckdb-bin"
