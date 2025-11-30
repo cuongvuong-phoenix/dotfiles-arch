@@ -53,8 +53,8 @@ set -gx GI_TYPELIB_PATH /usr/local/lib/girepository-1.0 $GI_TYPELIB_PATH
 set -gx RUBY_YJIT_ENABLE 1
 
 # Android
-#set -gx JAVA_HOME /opt/android-studio/jbr
-#set -gx ANDROID_HOME ~/Android/Sdk
+set -gx JAVA_HOME /opt/android-studio/jbr
+set -gx ANDROID_HOME ~/Android/Sdk
 #set -gx NDK_HOME $ANDROID_HOME/ndk/$(ls -1 $ANDROID_HOME/ndk)
 
 ################################################################

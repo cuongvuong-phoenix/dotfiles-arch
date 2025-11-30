@@ -71,6 +71,8 @@ PACKAGES=(
   "postgresql"
   "duckdb-bin"
 
+  "android-studio"
+
   # File Transfer
   "syncthing"
   "qbittorrent"
