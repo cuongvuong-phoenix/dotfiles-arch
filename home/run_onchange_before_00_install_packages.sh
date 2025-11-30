@@ -1,5 +1,6 @@
 #!/bin/bash
 
+printf "\n==== Install packages ====\n"
 PACKAGES=(
   "chezmoi"
 
@@ -49,6 +50,7 @@ PACKAGES=(
   "starship"
   "zoxide"
   "fish"
+  "fisher"
   "lazygit"
   "git-delta" # For `lazygit` diff view
   "dust"
@@ -80,6 +82,7 @@ PACKAGES=(
   "spotify"
   "obsidian"
   "rustdesk-bin"
+  "qdirstat"
 
   # Social
   "ferdium-bin"
@@ -90,15 +93,3 @@ PACKAGES=(
 )
 paru -Sy --needed "${PACKAGES[@]}"
 
-# [yazi] install plugins
-ya pkg install
-
-# [tmux] install plugins
-~/.tmux/plugins/tpm/bin/install_plugins
-
-# [mise] install runtimes
-mise install
-
-# [Rust] Install nightly toolchain
-rustup toolchain install nightly
-rustup default nightly
