@@ -21,7 +21,7 @@ desc = "Jump to a file/directory via fzf"
 
 # ---------------- Goto ----------------
 [[mgr.prepend_keymap]]
-on = [ "g", "s" ]
+on = ["g", "s"]
 run = "cd ~/Pictures/Screenshots/"
 desc = "Go to Screenshots"
 
@@ -70,6 +70,11 @@ desc = "Open mount manager"
 on = ["c", "m"]
 run = "plugin chmod"
 desc = "Chmod on selected files"
+
+[[mgr.prepend_keymap]]
+on = ["i", "s"]
+run = "plugin what-size"
+desc = "Calc size of selection or cwd"
 
 # ---------------- DuckDB ----------------
 # Temporarily disable as it's being stuck at 99% while prefetching

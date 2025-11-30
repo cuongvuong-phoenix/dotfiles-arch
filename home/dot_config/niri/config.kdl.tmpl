@@ -240,6 +240,9 @@ binds {
     Mod+D hotkey-overlay-title="Application Launcher" {
         spawn "dms" "ipc" "call" "spotlight" "toggle";
     }
+    Alt+E hotkey-overlay-title="Emoji Picker via Application Launcher" {
+        spawn "dms" "ipc" "call" "spotlight" "openQuery" ":";
+    }
     Mod+V hotkey-overlay-title="Clipboard Manager" {
         spawn "dms" "ipc" "call" "clipboard" "toggle";
     }
