@@ -35,6 +35,7 @@ PACKAGES=(
   "ntfs-3g" # Mount NTFS (Windows) partitions
 
   # Security & Privacy
+  "prek-bin" # `pre-commit` re-engineered in Rust
   "bitwarden"
   "1password"
   "cloudflare-warp-bin"
