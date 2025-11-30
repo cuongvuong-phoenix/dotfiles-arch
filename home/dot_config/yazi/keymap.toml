@@ -19,6 +19,12 @@ on = "<C-p>"
 run = "plugin fzf"
 desc = "Jump to a file/directory via fzf"
 
+# ---------------- Goto ----------------
+[[mgr.prepend_keymap]]
+on = [ "g", "s" ]
+run = "cd ~/Pictures/Screenshots/"
+desc = "Go to Screenshots"
+
 # ---------------- Copy/Paste ----------------
 # Linux (Wayland) only
 [[mgr.prepend_keymap]]
