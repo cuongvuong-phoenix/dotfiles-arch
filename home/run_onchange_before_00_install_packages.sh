@@ -86,7 +86,7 @@ PACKAGES=(
   # Extras
   "vivaldi"
 )
-paru -Syu --needed "${PACKAGES[@]}"
+paru -Sy --needed "${PACKAGES[@]}"
 
 # [yazi] install plugins
 ya pkg install
