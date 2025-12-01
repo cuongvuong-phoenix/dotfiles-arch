@@ -1,4 +1,8 @@
-workspace "Home"
+workspace "Home" {
+    layout {
+        center-focused-column "on-overflow"
+    }
+}
 workspace "Chat" {
     layout {
         center-focused-column "on-overflow"
