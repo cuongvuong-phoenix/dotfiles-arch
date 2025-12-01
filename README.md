@@ -1,14 +1,14 @@
 # Cuong Phoenix' dotfiles
 
-## Setup
+## 🚀 Setup
 
 ```bash
 sh -c "$(curl -fsLS get.chezmoi.io)" -- init --apply git@github.com:cuongvuong-phoenix/dotfiles-arch.git
 ```
 
-## Manual steps
+## 🧑‍🌾 Manual steps
 
-### Auto mount Windows partitions
+### 💾 Auto mount Windows partitions
 
 1. Run `sudo blkid` to get the UUIDs
 2. Setup `fstab` to something like this
@@ -16,7 +16,7 @@ sh -c "$(curl -fsLS get.chezmoi.io)" -- init --apply git@github.com:cuongvuong-p
   UUID=01D79E464BEAB010                     /mnt/SSD       ntfs-3g defaults,windows_names,big_writes,nofail,uid=1000,gid=1000,umask=0022 0 0
   ```
 
-### Customize KDE as the primary portals
+### 🗃️ Customize KDE as the primary portals
 
 1. **Setup global env**:
 ```bash
@@ -40,3 +40,7 @@ QT_QPA_PLATFORMTHEME="qt6ct"
 	[UiSettings]
 	ColorScheme=qt6ct
 	```
+
+## 🐛 Troubleshooting
+
+- `nvim` LSP broken? -> Open `:Lazy` (`<Leader>ps`), then press `R` to Restore all plugins to the state in the lockfile.
