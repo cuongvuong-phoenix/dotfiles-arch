@@ -1,5 +1,6 @@
 [mgr]
 show_hidden = true
+linemode = "size"
 
 [opener]
 extract = [
@@ -11,6 +12,8 @@ extract = [
 max_width = 1920
 max_height = 1080
 
+[tasks]
+image_bound = [8192, 4608] # 8K resolution
 
 [plugin]
 prepend_fetchers = [
