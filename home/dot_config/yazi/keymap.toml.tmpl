@@ -27,7 +27,11 @@ desc = "Go to Screenshots"
 
 [[mgr.prepend_keymap]]
 on = ["g", "w"]
+{{- if eq .chezmoi.hostname "PHOENIX-PCLIN01" }}
 run = "cd /mnt/SSD/Media/Images/_Wallpapers/Linux/"
+{{- else if eq .chezmoi.hostname "PHOENIX-LTLIN01" }}
+run = "cd /mnt/Data/Media/Images/_Wallpapers/Linux/"
+{{- end }}
 desc = "Go to Wallpapers"
 
 # ---------------- Copy/Paste ----------------
