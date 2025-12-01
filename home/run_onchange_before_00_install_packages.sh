@@ -74,6 +74,7 @@ PACKAGES=(
   "go"
   "libyaml" # To install ruby
   "postgresql"
+  "mariadb"
   "valkey"
   "duckdb-bin"
 
