@@ -1,0 +1,28 @@
+workspace "Home"
+workspace "Chat" {
+    layout {
+        center-focused-column "on-overflow"
+    }
+}
+workspace "Work (Project 1)"
+workspace "Work (Project 1 - Extras)"
+workspace "Work (Project 2)"
+workspace "Work (Project 2 - Extras)"
+workspace "Gaming"
+
+window-rule {
+    match app-id="ferdium"
+    match app-id="Slack"
+
+    open-on-workspace "Chat"
+    open-focused true
+    default-column-width { proportion 0.75; }
+}
+window-rule {
+    match app-id="steam" title="Steam"
+    match app-id="vivaldi-stable"
+
+    open-on-workspace "Gaming"
+    open-focused true
+    default-column-width { proportion 1.0; }
+}

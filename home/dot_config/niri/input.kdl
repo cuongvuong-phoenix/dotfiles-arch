@@ -1,0 +1,26 @@
+input {
+    keyboard {
+        xkb {
+        }
+        numlock
+    }
+    touchpad {
+        tap
+        natural-scroll
+    }
+    mouse {
+        accel-profile "flat"
+    }
+    trackpoint {
+    }
+}
+
+cursor {
+    xcursor-theme "Bibata-Modern-Amber"
+}
+
+gestures {
+    hot-corners {
+        top-left
+    }
+}

@@ -1,0 +1,14 @@
+include "input.kdl"
+include "outputs.kdl"
+include "layout.kdl"
+include "animations.kdl"
+include "workspaces.kdl"
+include "rules.kdl"
+include "startup.kdl"
+include "env.kdl"
+include "misc.kdl"
+include "binds.kdl"
+
+debug {
+    honor-xdg-activation-with-invalid-serial
+}

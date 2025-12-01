@@ -1,0 +1,38 @@
+layout {
+    gaps 12
+    background-color "transparent"
+    center-focused-column "never"
+    always-center-single-column
+    preset-column-widths {
+        proportion 0.5
+        proportion 0.75
+    }
+    default-column-width { proportion 0.5; }
+    border {
+        off
+        width 4
+        active-color   "#707070"
+        inactive-color "#d0d0d0"
+        urgent-color   "#cc4444"
+    }
+    focus-ring {
+        width 4
+        active-gradient from="#CBA3FF" to="#FDA62D" angle=45 in="oklch longer hue"
+        // active-gradient from="#f00f" to="#0f05" angle=45 in="oklch longer hue"
+        inactive-color "#505050"
+    }
+    shadow {
+        softness 30
+        spread 5
+        offset x=0 y=5
+        color "#0007"
+    }
+    struts {
+    }
+}
+
+recent-windows {
+    highlight {
+        corner-radius 12
+    }
+}

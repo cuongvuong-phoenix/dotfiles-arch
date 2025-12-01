@@ -1,0 +1,102 @@
+// ---------------- Layer rules ----------------
+layer-rule {
+    match namespace="quickshell"
+    match namespace="awww-daemon"
+    place-within-backdrop true
+}
+overview {
+    workspace-shadow {
+        off
+    }
+}
+
+// ---------------- Window rules ----------------
+window-rule {
+    match is-active=false
+
+    opacity 0.9
+}
+window-rule {
+    geometry-corner-radius 12
+    clip-to-geometry true
+    draw-border-with-background false
+}
+window-rule {
+    match app-id=r#"^org\.gnome\."#
+
+    draw-border-with-background false
+    geometry-corner-radius 12
+    clip-to-geometry true
+}
+window-rule {
+    match app-id=r#"^org\.wezfurlong\.wezterm$"#
+    match app-id="Alacritty"
+    match app-id="zen"
+    match app-id="com.mitchellh.ghostty"
+    match app-id="kitty"
+
+    draw-border-with-background false
+}
+
+// Default dimensions
+window-rule {
+    match app-id=r#"^gnome-control-center$"#
+    match app-id=r#"^pavucontrol$"#
+    match app-id=r#"^nm-connection-editor$"#
+
+    default-column-width { proportion 0.5; }
+    open-floating false
+}
+window-rule {
+    match app-id="microsoft-edge"
+    match app-id="obsidian"
+    match app-id="org.telegram.desktop"
+
+    default-column-width { proportion 0.75; }
+}
+window-rule {
+    match app-id="dev.zed.Zed"
+
+    default-column-width { proportion 1.0; }
+}
+
+// Floating windows
+window-rule {
+    match app-id=r#"^gnome-calculator$"#
+    match app-id=r#"^galculator$"#
+    match app-id=r#"^blueman-manager$"#
+    match app-id=r#"^org\.gnome\.Nautilus$"#
+    match app-id=r#"^steam$"# title="Sign in to Steam"
+    match app-id=r#"^steam$"# title="Friends List"
+    match app-id=r#"^xdg-desktop-portal$"#
+    match app-id="org.fcitx.fcitx5-config-qt"
+    match app-id="qimgv"
+    match app-id=r#"firefox$"# title="^Picture-in-Picture$"
+    match app-id="" title="Picture in picture"
+    match app-id="zoom"
+    match app-id="protonvpn-app"
+    match title=r#"^Sign in - Google Accounts"#
+    match app-id="Bitwarden"
+    match app-id="1password"
+    match app-id="jetbrains-studio" title="Welcome to Android Studio"
+    match app-id="msedge-_jbkfoedolllekgbhcbcoahefnbanhhlh-Default"  // Bitwarden extension
+    match app-id="vivaldi-stable" title="Vivaldi Settings: General - Vivaldi"
+    match app-id="vivaldi-stable" title="Bitwarden - Vivaldi"
+    match app-id="xdm-app"
+
+    open-floating true
+}
+window-rule {
+    match title="Terminal File Chooser"
+    match title="Task Manager"
+
+    open-floating true
+    default-column-width { proportion 0.5; }
+    default-window-height { proportion 0.75; }
+}
+
+// Specific positions
+window-rule {
+    match app-id="steam" title=r#"^notificationtoasts_\d+_desktop$"#
+    default-floating-position x=10 y=10 relative-to="bottom-right"
+}
