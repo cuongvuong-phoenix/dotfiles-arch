@@ -25,6 +25,11 @@ on = ["g", "s"]
 run = "cd ~/Pictures/Screenshots/"
 desc = "Go to Screenshots"
 
+[[mgr.prepend_keymap]]
+on = ["g", "w"]
+run = "cd /mnt/SSD/Media/Images/_Wallpapers/Linux/"
+desc = "Go to Wallpapers"
+
 # ---------------- Copy/Paste ----------------
 # Linux (Wayland) only
 [[mgr.prepend_keymap]]
@@ -75,6 +80,11 @@ desc = "Chmod on selected files"
 on = ["i", "s"]
 run = "plugin what-size"
 desc = "Calc size of selection or cwd"
+
+[[mgr.prepend_keymap]]
+on = ["c", "w"]
+run = 'shell -- awww img "$0"'
+desc = "Change wallpaper using `awww`"
 
 # ---------------- DuckDB ----------------
 # Temporarily disable as it's being stuck at 99% while prefetching
