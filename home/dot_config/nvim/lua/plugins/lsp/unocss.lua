@@ -1,3 +1,6 @@
+--- PERF: `unocss-language-server` was poorly written. It's making auto-suggestion extremely slow.
+--- Therefore, it might be better to _explicitly_ only use within small projects.
+
 ---@type LazySpec
 return {
   { import = 'astrocommunity.pack.html-css' },
