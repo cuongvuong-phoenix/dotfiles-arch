@@ -1,25 +1,20 @@
 #!/bin/fish
 
-printf "\n======== [dms] ========\n"
-printf "\n🚀 Installing plugins...\n"
-dms plugins install dankPomodoroTimer
-dms plugins install emojiLauncher
-
 printf "\n======== [yazi] ========\n"
-printf "\n🚀 Installing plugins...\n"
+echo "🚀 Installing plugins..."
 ya pkg install
 
 printf "\n======== [tmux] ========\n"
-printf "\n🚀 Installing plugins...\n"
+echo "🚀 Installing plugins..."
 ~/.tmux/plugins/tpm/bin/install_plugins
 
 printf "\n======== [fish] ========\n"
-printf "\n🚀 Applying Dracula theme...\n"
+echo "🚀 Applying Dracula theme..."
 fish_config theme save Dracula
-printf "\n🚀 Installing & updating plugins with fisher...\n"
+echo "🚀 Installing & updating plugins with fisher..."
 fisher update
 
 printf "\n======== [mise] ========\n"
-printf "\n🚀 Installing runtimes\n"
+echo "🚀 Installing runtimes"
 mise install
 

@@ -8,6 +8,12 @@ sh -c "$(curl -fsLS get.chezmoi.io)" -- init --apply git@github.com:cuongvuong-p
 
 ## 🧑‍🌾 Manual steps
 
+### 🧹 Avoid collision packages
+
+```sh
+paru -Rns cachyos-niri-settings swaylock-effects-git swaylock-fancy-git wlogout mako swww
+```
+
 ### 💾 Auto mount Windows partitions
 
 1. Run `sudo blkid` to get the UUIDs
