@@ -12,8 +12,12 @@ vim.keymap.set('v', '<C-c>', '"+y', { desc = 'Copy into system clipboard' })
 vim.keymap.set('v', '<C-x>', '"+x', { desc = 'Cut into system clipboard' })
 vim.keymap.set('v', '<C-v>', '"+gp', { desc = 'Put from system clipboard (Visual)' })
 vim.keymap.set('n', '<C-v>', '"+gP', { desc = 'Put from system clipboard (Normal)' })
--- PERF: RHS for the shortcut in Command mode can be reused for Insert mode, but `<C-r>+` basically
--- mimics `Ctrl + Shift + V`, so it's VERY VERY VERY SLOW compared to `:put` (because it's inputting
--- char-by-char!).
+-- PERF: RHS for the shortcut in Command mode can be reused for Insert mode. However, `<C-r>+` basically
+-- mimics `Ctrl + Shift + V`, so it's VERY VERY VERY SLOW compared to `:put` (it's inputting char-by-char!).
 vim.keymap.set('i', '<C-v>', '<Esc>"+pa', { desc = 'Put from system clipboard (Insert)' })
 vim.keymap.set('c', '<C-v>', '<C-r>+', { desc = 'Put from system clipboard (Command)' })
+
+-- -------- Others --------
+-- Disable switching to Select mode via `gh` in files that don't have LSP hover.
+--  That mode is basically useless and just causing frustration when typing `gh` quickly.
+vim.keymap.set('n', 'gh', '<Nop>', { noremap = true, silent = true })

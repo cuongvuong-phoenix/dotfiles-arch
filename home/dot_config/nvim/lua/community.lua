@@ -8,7 +8,7 @@
 return {
   'AstroNvim/astrocommunity',
   -- Extras
-  -- { import = 'astrocommunity.utility.noice-nvim' }, -- TOO MUCH HASSLE TO CONFIG THIS SHIT
+  { import = 'astrocommunity.utility.noice-nvim' },
   { import = 'astrocommunity.comment.ts-comments-nvim' },
   -- Languages
   { import = 'astrocommunity.pack.lua' },
