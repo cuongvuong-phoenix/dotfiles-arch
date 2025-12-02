@@ -87,7 +87,7 @@ desc = "Calc size of selection or cwd"
 
 [[mgr.prepend_keymap]]
 on = ["c", "w"]
-run = 'shell -- awww img "$0"'
+run = 'shell -- awww img "$0"; dms ipc call wallpaper set "$0"'
 desc = "Change wallpaper using `awww`"
 
 # ---------------- DuckDB ----------------
