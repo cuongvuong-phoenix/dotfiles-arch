@@ -1,12 +1,15 @@
+// Resolution, scale, positions are managed by `kanshi`. See `~/.config/kanshi/config`.
 // Run `niri msg outputs` to see all available outputs.
+
 {{- if eq .chezmoi.hostname "PHOENIX-PCLIN01" }}
-output "HDMI-A-1" {
-    mode "3840x2160@143.988"
-    scale 1.5
-}
 {{- else if eq .chezmoi.hostname "PHOENIX-LTLIN01" }}
-output "eDP-2" {
-    mode "3072x1920@120.002"
-    scale 1.5
+output "ASUSTek COMPUTER INC VG34VQL3A S3LMDW009542" {
+  layout {
+    preset-column-widths {
+        proportion 0.25
+        proportion 0.5
+        proportion 0.75
+    }
+  }
 }
 {{- end }}
