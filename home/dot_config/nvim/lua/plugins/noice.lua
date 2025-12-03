@@ -15,11 +15,16 @@ return {
       },
     },
     routes = {
+      -- Hide unnecessary messages
       {
         filter = {
           event = 'msg_show',
-          kind = '', -- See `:h ui-messages`
-          find = 'fewer line',
+          kind = '',
+          any = {
+            { find = 'fewer line' },
+            { find = 'more line' },
+            { find = 'lines yanked' },
+          },
         },
         opts = { skip = true },
       },
