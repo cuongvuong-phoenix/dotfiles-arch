@@ -1,0 +1,23 @@
+{{- if eq .chezmoi.hostname "PHOENIX-PCLIN01" }}
+{{- else if eq .chezmoi.hostname "PHOENIX-LTLIN01" }}
+output "BOE 0x0AA8 Unknown" {
+  mode 3072x1920@120.002
+  scale 1.5
+  alias $INTERNAL
+}
+
+output "ASUSTek COMPUTER INC VG34VQL3A S3LMDW009542" {
+  mode 3440x1440@143.975
+  scale 1.0
+  alias $HOLISTICS_MAIN
+}
+
+profile internal-only {
+  output $INTERNAL enable
+}
+
+profile dual-holistics {
+  output $INTERNAL disable
+  output $HOLISTICS_MAIN enable
+}
+{{- end }}

@@ -10,6 +10,7 @@ PACKAGES=(
   "polkit-kde-agent"
   "sddm"
   "sddm-silent-theme"
+  "kanshi"
 
   # Essentials
   "awww-git"
