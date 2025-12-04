@@ -4,7 +4,9 @@ return {
   opts = {
     highlights = {
       astrodark = {
-        ['SnacksPickerDir'] = { fg = '#696c76' }, -- `Comment`, but without `italic` to make it easier to read.
+        -- Like `Comment`, but without italic to make it easier to read.
+        ['CommentNormal'] = { fg = '#696c76' },
+        ['SnacksPickerDir'] = 'CommentNormal',
       },
     },
   },
