@@ -4,25 +4,41 @@ return {
   specs = {
     {
       'AstroNvim/astrocore',
-      opts = {
-        mappings = {
-          n = {
-            ['<C-p>'] = {
-              function()
-                require('snacks').picker.files {
-                  hidden = vim.tbl_get((vim.uv or vim.loop).fs_stat '.git' or {}, 'type') == 'directory',
-                }
-              end,
-              desc = 'Find files',
-            },
-            -- TODO: Disable notification (can't do for now...)
-            ['<Leader>z'] = {
-              function() require('snacks').toggle.zoom():toggle() end,
-              desc = 'Toggle zoom mode',
-            },
-          },
-        },
-      },
+      opts = function(_, opts)
+        local maps = opts.mappings
+
+        -- ======== Zen ========
+        -- TODO: Disable notification (can't do for now...)
+        maps.n['<Leader>z'] = {
+          function() require('snacks').toggle.zoom():toggle() end,
+          desc = 'Toggle zoom mode',
+        }
+
+        -- ======== Picker ========
+        maps.n['<C-p>'] = {
+          function()
+            require('snacks').picker.files {
+              hidden = vim.tbl_get((vim.uv or vim.loop).fs_stat '.git' or {}, 'type') == 'directory',
+              matcher = {
+                frecency = true,
+                history_bonus = true,
+              },
+              layout = 'vscode',
+            }
+          end,
+          desc = 'Find files',
+        }
+        -- Git
+        if vim.fn.executable 'git' == 1 then
+          maps.n['<Leader>gc'] = { desc = 'Git history' }
+          maps.n['<Leader>gcr'] =
+            { function() require('snacks').picker.git_log() end, desc = 'Git history (Repository)' }
+          maps.n['<Leader>gcf'] =
+            { function() require('snacks').picker.git_log_file() end, desc = 'Git history (File)' }
+          maps.n['<Leader>gcl'] =
+            { function() require('snacks').picker.git_log_line() end, desc = 'Git history (Line)' }
+        end
+      end,
     },
   },
   opts = function(_, opts)
@@ -30,6 +46,7 @@ return {
 
     return require('astrocore').extend_tbl(opts, {
       -- ======== Dashboard ========
+      ---@class snacks.dashboard.Config
       dashboard = {
         preset = {
           keys = {
@@ -64,7 +81,8 @@ return {
         -- },
       },
 
-      -- ======== Zen ========
+      -- ======== Toggle ========
+      ---@class snacks.toggle.Config
       toggle = {
         which_key = true, -- integrate with which-key to show enabled/disabled icons and colors
         notify = true, -- show a notification when toggling
@@ -99,6 +117,32 @@ return {
               relativenumber = true,
               signcolumn = 'yes',
               foldcolumn = '1',
+            },
+          },
+        },
+      },
+
+      -- ======== Picker ========
+      ---@class snacks.picker.Config
+      picker = {
+        formatters = {
+          file = {
+            min_width = 9999, -- Because Snacks is so stupidddd it doesn't have an action to show path on hover like LSP.
+          },
+        },
+        actions = {
+          list_scroll_right = function(picker)
+            if picker.list.win:valid() then picker.list.win:hscroll() end
+          end,
+          list_scroll_left = function(picker)
+            if picker.list.win:valid() then picker.list.win:hscroll(true) end
+          end,
+        },
+        win = {
+          input = {
+            keys = {
+              ['<C-l>'] = { 'list_scroll_right', mode = { 'n', 'i' } },
+              ['<C-h>'] = { 'list_scroll_left', mode = { 'n', 'i' } },
             },
           },
         },
