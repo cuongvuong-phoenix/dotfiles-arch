@@ -1,4 +1,13 @@
+output "GIGA-BYTE TECHNOLOGY CO., LTD. Gigabyte M32U 0x01010101" {
+  mode 3840x2160@143.988
+  scale 1.5
+  alias $HOME
+}
+
 {{- if eq .chezmoi.hostname "PHOENIX-PCLIN01" }}
+profile single {
+  output $HOME
+}
 {{- else if eq .chezmoi.hostname "PHOENIX-LTLIN01" }}
 output "BOE 0x0AA8 Unknown" {
   mode 3072x1920@120.002
@@ -9,15 +18,15 @@ output "BOE 0x0AA8 Unknown" {
 output "ASUSTek COMPUTER INC VG34VQL3A S3LMDW009542" {
   mode 3440x1440@143.975
   scale 1.0
-  alias $HOLISTICS_MAIN
+  alias $HOLISTICS
 }
 
 profile internal-only {
-  output $INTERNAL enable
+  output $INTERNAL
 }
 
 profile dual-holistics {
   output $INTERNAL disable
-  output $HOLISTICS_MAIN enable
+  output $HOLISTICS
 }
 {{- end }}
