@@ -96,6 +96,7 @@ PACKAGES=(
   "obsidian"
   "rustdesk-bin"
   "qdirstat-bin"
+  "okular"
 
   # Social
   "ferdium-bin"
