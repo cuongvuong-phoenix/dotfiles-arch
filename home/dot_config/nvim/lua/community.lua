@@ -7,6 +7,9 @@
 ---@type LazySpec
 return {
   'AstroNvim/astrocommunity',
+  -- Recipes
+  -- { import = 'astrocommunity.recipes.diagnostic-virtual-lines-current-line'},
+  { import = 'astrocommunity.recipes.auto-session-restore' },
   -- Extras
   { import = 'astrocommunity.utility.noice-nvim' },
   { import = 'astrocommunity.comment.ts-comments-nvim' },
