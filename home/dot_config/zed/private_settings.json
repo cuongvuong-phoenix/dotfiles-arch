@@ -15,7 +15,7 @@
   "restore_on_startup": "last_session",
   //-------------------------------- 🎨 UI --------------------------------
   "ui_font_size": 16,
-  "theme": "One Dark Pro",
+  "theme": "One Dark",
   "experimental.theme_overrides": {
     "search.match_background": "#d19a6620"
   },

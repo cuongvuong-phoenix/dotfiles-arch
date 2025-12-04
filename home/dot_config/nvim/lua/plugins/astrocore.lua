@@ -43,7 +43,7 @@ return {
         },
 
         -- Qualities of life
-        ['<M-s>'] = { ':noa w<CR>', desc = 'Save without format' }, -- Don't know why `<M-C-s>` isn't recognized...
+        ['<M-s>'] = { ':noa w<CR>', desc = 'Save without format', silent = true }, -- Don't know why `<M-C-s>` isn't recognized...
         -- TODO: Add multi-cursor above & below
       },
     },
