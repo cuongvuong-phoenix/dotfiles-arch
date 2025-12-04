@@ -7,6 +7,7 @@ return {
         -- Like `Comment`, but without italic to make it easier to read.
         ['CommentNormal'] = { fg = '#696c76' },
         ['SnacksPickerDir'] = 'CommentNormal',
+        ['LspReferenceRead'] = 'Visual', -- Easier to spot relevant symbols
       },
     },
   },

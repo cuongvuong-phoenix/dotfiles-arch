@@ -22,7 +22,7 @@ return {
         'lua_ls', -- always use `stylua`
         'volar', -- always use linter/formatter
       },
-      timeout_ms = 1000, -- default format timeout
+      timeout_ms = 5000, -- default format timeout
     },
     -- enable servers that you already have installed without mason
     servers = {
