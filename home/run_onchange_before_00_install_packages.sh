@@ -97,6 +97,7 @@ PACKAGES=(
   "rustdesk-bin"
   "qdirstat-bin"
   "okular"
+  "kruler"
 
   # Social
   "ferdium-bin"
