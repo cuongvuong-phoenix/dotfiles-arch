@@ -18,9 +18,10 @@ return {
           -- "python",
         },
       },
-      disabled = { -- disable formatting capabilities for the listed language servers
+      disabled = {
         'lua_ls', -- always use `stylua`
         'volar', -- always use linter/formatter
+        'vtsls', -- always use linter/formatter
       },
       timeout_ms = 5000, -- default format timeout
     },
