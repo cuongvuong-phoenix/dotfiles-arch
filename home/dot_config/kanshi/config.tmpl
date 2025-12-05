@@ -6,7 +6,7 @@ output "GIGA-BYTE TECHNOLOGY CO., LTD. Gigabyte M32U 0x01010101" {
 
 {{- if eq .chezmoi.hostname "PHOENIX-PCLIN01" }}
 profile single {
-  output $HOME
+  output $HOME enable
 }
 {{- else if eq .chezmoi.hostname "PHOENIX-LTLIN01" }}
 output "BOE 0x0AA8 Unknown" {
@@ -22,11 +22,11 @@ output "ASUSTek COMPUTER INC VG34VQL3A S3LMDW009542" {
 }
 
 profile internal-only {
-  output $INTERNAL
+  output $INTERNAL enable
 }
 
 profile dual-holistics {
   output $INTERNAL disable
-  output $HOLISTICS
+  output $HOLISTICS enable
 }
 {{- end }}
