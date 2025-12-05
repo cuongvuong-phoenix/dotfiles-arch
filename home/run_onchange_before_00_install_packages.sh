@@ -79,6 +79,7 @@ PACKAGES=(
   "valkey"
   "duckdb-bin"
 
+  "github-cli"
   "claude-code"
 
   # File Transfer
