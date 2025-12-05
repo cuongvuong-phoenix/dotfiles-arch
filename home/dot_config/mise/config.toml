@@ -1,7 +1,7 @@
 [tools]
 node = 'lts'
 bun = "latest"
-ruby = "latest"
+ruby = "3.2.6"
 usage = "latest"
 deno = "latest"
 "npm:pnpm" = "latest"
