@@ -24,6 +24,7 @@ return {
             { find = 'fewer line' },
             { find = 'more line' },
             { find = 'lines yanked' },
+            { find = 'written' },
           },
         },
         opts = { skip = true },
