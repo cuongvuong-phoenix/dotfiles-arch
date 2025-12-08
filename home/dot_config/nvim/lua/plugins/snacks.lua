@@ -111,7 +111,8 @@ return {
         zoom = {
           ---@type snacks.win.Config
           win = {
-            backdrop = 60,
+            backdrop = 50,
+            height = 0,
             wo = {
               number = true,
               relativenumber = true,
