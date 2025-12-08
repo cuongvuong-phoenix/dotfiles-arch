@@ -2,16 +2,16 @@
 
 ## 🚀 Setup
 
-```bash
+```sh
 sh -c "$(curl -fsLS get.chezmoi.io)" -- init --apply git@github.com:cuongvuong-phoenix/dotfiles-arch.git
 ```
 
-## 🧑‍🌾 Manual steps
+# 🧑‍🌾 Manual steps
 
 ### 🧹 Avoid collision packages
 
 ```sh
-paru -Rns cachyos-niri-settings swaylock-effects-git swaylock-fancy-git wlogout mako swww
+paru - Rns cachyos-niri-settings swaylock-effects-git swaylock-fancy-git wlogout mako
 ```
 
 ### 💾 Auto mount Windows partitions
@@ -25,10 +25,10 @@ paru -Rns cachyos-niri-settings swaylock-effects-git swaylock-fancy-git wlogout 
 ### 🗃️ Customize KDE as the primary portals
 
 1. **Setup global env**:
-```bash
-QT_QPA_PLATFORM="wayland"
-QT_QPA_PLATFORMTHEME="qt6ct"
-```
+	```sh
+	QT_QPA_PLATFORM="wayland"
+	QT_QPA_PLATFORMTHEME="qt6ct"
+	```
 2. **Open `qt6ct`**:
 	- **Style**: Darkly
 	- **Color Scheme**: `catppuccin-mocha-peach`

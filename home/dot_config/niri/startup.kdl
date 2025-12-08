@@ -1,7 +1,7 @@
 spawn-at-startup "kanshi"
 spawn-at-startup "bash" "-c" "wl-paste --watch cliphist store &"
 spawn-at-startup "dms" "run"
-spawn-at-startup "awww-daemon"
+spawn-at-startup "swww-daemon"
 spawn-at-startup "/usr/lib/polkit-kde-authentication-agent-1"
 // Auto-recognize correct apps when opening files in Dolphin:
 // https://wiki.archlinux.org/title/Dolphin#Dolphin_cannot_find_applications_(when_running_under_another_window_manager)

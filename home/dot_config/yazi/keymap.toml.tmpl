@@ -87,8 +87,8 @@ desc = "Calc size of selection or cwd"
 
 [[mgr.prepend_keymap]]
 on = ["c", "w"]
-run = 'shell -- awww img "$0"; dms ipc call wallpaper set "$0"'
-desc = "Change wallpaper using `awww`"
+run = 'shell -- swww img "$0"; dms ipc call wallpaper set "$0"'
+desc = "Change wallpaper using `swww`"
 
 # ---------------- DuckDB ----------------
 # Temporarily disable as it's being stuck at 99% while prefetching

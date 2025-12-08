@@ -39,7 +39,7 @@ while true; do
 
     # Update the wallpaper
     echo "[INFO] Setting wallpaper: '$SELECTED_WALLPAPER'"
-    awww img "$SELECTED_WALLPAPER"
+    swww img "$SELECTED_WALLPAPER"
 
     # Remove the selected wallpaper from the array to prevent duplication within this cycle
     unset "WALLPAPERS[$WALLPAPER_INDEX]"

@@ -13,7 +13,7 @@ PACKAGES=(
   "kanshi"
 
   # Essentials
-  "awww-git"
+  "swww"
   "qt5ct"
   "qt6ct"
   "darkly-bin"

@@ -1,7 +1,7 @@
 // ---------------- Layer rules ----------------
 layer-rule {
     match namespace="quickshell"
-    match namespace="awww-daemon"
+    match namespace="swww-daemon"
     place-within-backdrop true
 }
 overview {
