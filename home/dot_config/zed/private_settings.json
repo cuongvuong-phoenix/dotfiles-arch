@@ -11,11 +11,10 @@
     "diagnostics": false,
     "metrics": false
   },
-  "disable_ai": true,
-  "restore_on_startup": "last_session",
+  "restore_on_startup": "none",
   //-------------------------------- 🎨 UI --------------------------------
   "ui_font_size": 16,
-  "theme": "One Dark",
+  "theme": "One Dark Pro",
   "experimental.theme_overrides": {
     "search.match_background": "#d19a6620"
   },
@@ -39,6 +38,7 @@
   },
   //-------------------------------- 🤖 AI --------------------------------
   // Disable everything: https://github.com/zed-industries/zed/discussions/16750#discussioncomment-13518876
+  "disable_ai": true,
   "features": {
     "edit_prediction_provider": "none"
   },
@@ -109,7 +109,7 @@
       "formatter": {
         "external": {
           "command": "sql-formatter",
-          "arguments": ["--language", "postgresql", "--config", "/home/bimbal/Development/.sql-formatter.json"]
+          "arguments": ["--language", "postgresql", "--config", "~/Development/.sql-formatter.json"]
         }
       }
     },
@@ -162,7 +162,7 @@
       }
     },
 
-    // TypeScript + Vue
+    // TypeScript + Vue support
     "vtsls": {
       "settings": {
         "vtsls": {
@@ -170,7 +170,7 @@
             "globalPlugins": [
               {
                 "name": "@vue/typescript-plugin",
-                "location": "/home/bimbal/.local/share/zed/extensions/work/vue/node_modules/@vue/language-server",
+                "location": "~/.local/share/zed/extensions/work/vue/node_modules/@vue/language-server",
                 "languages": ["vue.js"],
                 "configNamespace": "typescript",
                 "enableForWorkspaceTypeScriptVersions": true
@@ -189,7 +189,7 @@
       }
     },
 
-    // Linter & Formatter
+    // ESLint
     // "eslint": {
     //   "settings": {
     //     "rulesCustomizations": [
@@ -221,6 +221,8 @@
     //     ]
     //   }
     // },
+
+    // Biome
     "biome": {
       "settings": {
         "require_config_file": true

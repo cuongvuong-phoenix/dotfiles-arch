@@ -44,6 +44,8 @@
       "ctrl-shift-j": "workspace::SwapPaneDown",
       "space -": "pane::SplitDown",
       "space _": "pane::SplitRight",
+      "\\": "pane::SplitDown",
+      "|": "pane::SplitRight",
       "ctrl-b": "workspace::ToggleLeftDock"
     }
   },
@@ -93,7 +95,7 @@
   {
     "context": "VimControl && !menu",
     "bindings": {
-      "space f f": "pane::DeploySearch"
+      "space f w": "pane::DeploySearch"
     }
   },
   //-------------------------------- 📂 File Explorer --------------------------------
@@ -123,6 +125,9 @@
     "bindings": {
       "alt-j": "editor::MoveLineDown",
       "alt-k": "editor::MoveLineUp",
+      "alt-l": "editor::Indent",
+      "alt-h": "editor::Outdent",
+
       "alt-d": "vim::SelectNext",
       "shift-alt-k": "editor::AddSelectionAbove",
       "shift-alt-j": "editor::AddSelectionBelow"
