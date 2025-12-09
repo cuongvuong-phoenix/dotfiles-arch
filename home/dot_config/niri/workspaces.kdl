@@ -9,7 +9,7 @@ workspace "Home" {
 }
 workspace "Chat" {
     layout {
-        center-focused-column "on-overflow"
+        center-focused-column "always"
     }
 }
 workspace "Work (Project 1)"
