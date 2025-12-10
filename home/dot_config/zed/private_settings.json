@@ -11,7 +11,7 @@
     "diagnostics": false,
     "metrics": false
   },
-  "restore_on_startup": "none",
+  "restore_on_startup": "last_session", // To make reload works as expected...
   //-------------------------------- 🎨 UI --------------------------------
   "ui_font_size": 16,
   "theme": "One Dark Pro",
@@ -158,33 +158,6 @@
           "closureReturnTypeHints": {
             "enable": "always"
           }
-        }
-      }
-    },
-
-    // TypeScript + Vue support
-    "vtsls": {
-      "settings": {
-        "vtsls": {
-          "tsserver": {
-            "globalPlugins": [
-              {
-                "name": "@vue/typescript-plugin",
-                "location": "~/.local/share/zed/extensions/work/vue/node_modules/@vue/language-server",
-                "languages": ["vue.js"],
-                "configNamespace": "typescript",
-                "enableForWorkspaceTypeScriptVersions": true
-              }
-            ]
-          }
-        }
-      }
-    },
-    // Vue
-    "vue-language-server": {
-      "initialization_options": {
-        "vue": {
-          "hybridMode": true
         }
       }
     },
