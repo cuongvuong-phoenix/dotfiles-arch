@@ -57,7 +57,7 @@ window-rule {
 window-rule {
     match app-id="dev.zed.Zed"
 
-    default-column-width { proportion 1.0; }
+    default-column-width { proportion 0.75; }
 }
 
 // Floating windows
