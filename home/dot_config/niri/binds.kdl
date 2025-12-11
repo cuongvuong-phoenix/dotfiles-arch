@@ -6,7 +6,7 @@ binds {
     // === Applications ===
     Mod+Return hotkey-overlay-title="Open Terminal" { spawn "kitty"; }
     Mod+E hotkey-overlay-title="Open File Manager" { spawn "kitty" "-e" "yazi"; }
-    Mod+F1 hotkey-overlay-title="Draw Screen (Wayscriber)" { spawn "pkill" "-SIGUSR1" "wayscriber"; }
+    Alt+F1 hotkey-overlay-title="Draw Screen (Wayscriber)" { spawn "pkill" "-SIGUSR1" "wayscriber"; }
 
     Mod+D hotkey-overlay-title="Application Launcher" {
         spawn "dms" "ipc" "call" "spotlight" "toggle";
