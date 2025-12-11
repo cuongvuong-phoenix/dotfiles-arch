@@ -112,5 +112,12 @@ window-rule {
 // Specific positions
 window-rule {
     match app-id="steam" title=r#"^notificationtoasts_\d+_desktop$"#
-    default-floating-position x=10 y=10 relative-to="bottom-right"
+    default-floating-position x=12 y=12 relative-to="bottom-right"
+}
+
+// System Tray
+window-rule {
+    match app-id="Cloudflare Zero Trust"
+    match app-id="protonvpn-app"
+    default-floating-position x=256 y=12 relative-to="top-right"
 }
