@@ -40,6 +40,7 @@ PACKAGES=(
   "prek-bin" # `pre-commit` re-engineered in Rust
   "bitwarden"
   "1password"
+  "gnome-keyring" # For `1password` 2FA. Need this on systems like Niri.
   "cloudflare-warp-bin"
   "proton-vpn-gtk-app"
 
