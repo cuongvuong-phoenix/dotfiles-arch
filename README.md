@@ -19,7 +19,7 @@ paru - Rns cachyos-niri-settings swaylock-effects-git swaylock-fancy-git wlogout
 1. Run `sudo blkid` to get the UUIDs
 2. Setup `fstab` to something like this
   ```fstab
-  UUID=01D79E464BEAB010                     /mnt/SSD       ntfs-3g defaults,windows_names,big_writes,nofail,uid=1000,gid=1000,umask=0022 0 0
+  UUID=01D79E464BEAB010                     /mnt/SSD       ntfs3   defaults,windows_names,nofail,uid=1000,gid=1000,umask=0022 0 0
   ```
 
 ### 🎨 Application themes
