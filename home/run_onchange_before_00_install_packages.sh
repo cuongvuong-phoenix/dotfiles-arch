@@ -34,8 +34,6 @@ PACKAGES=(
   "fcitx5-bamboo"
   "whitesur-gtk-theme"
 
-  "ntfs-3g" # Mount NTFS (Windows) partitions
-
   # Security & Privacy
   "prek-bin" # `pre-commit` re-engineered in Rust
   "bitwarden"
