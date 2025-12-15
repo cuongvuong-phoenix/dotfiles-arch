@@ -2,11 +2,7 @@ input {
     workspace-auto-back-and-forth
 }
 
-workspace "Home" {
-    layout {
-        center-focused-column "on-overflow"
-    }
-}
+workspace "Home"
 workspace "Chat" {
     layout {
         center-focused-column "always"
