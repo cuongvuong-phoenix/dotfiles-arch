@@ -66,8 +66,9 @@ window-rule {
     match app-id=r#"^galculator$"#
     match app-id=r#"^blueman-manager$"#
     match app-id=r#"^org\.gnome\.Nautilus$"#
-    match app-id=r#"^steam$"# title="Sign in to Steam"
-    match app-id=r#"^steam$"# title="Friends List"
+    match app-id="steam" title="Sign in to Steam"
+    match app-id="steam" title="Friends List"
+    match app-id="steam" title="Add Non-Steam Game"
     match app-id=r#"^xdg-desktop-portal$"#
     match app-id="org.fcitx.fcitx5-config-qt"
     match app-id="qimgv"
@@ -86,6 +87,8 @@ window-rule {
 
     open-floating true
 }
+
+// Specific dimensions
 window-rule {
     match title="Terminal File Chooser"
     match title="Task Manager"
@@ -94,6 +97,15 @@ window-rule {
     default-column-width { proportion 0.5; }
     default-window-height { proportion 0.75; }
 }
+window-rule {
+    match app-id="steam" title="Add Non-Steam Game"
+
+    open-floating true
+    default-column-width { proportion 0.25; }
+    default-window-height { proportion 0.5; }
+}
+
+// No decorations
 window-rule {
     match app-id="org.kde.kruler"
 
@@ -121,3 +133,4 @@ window-rule {
     match app-id="protonvpn-app"
     default-floating-position x=256 y=12 relative-to="top-right"
 }
+
