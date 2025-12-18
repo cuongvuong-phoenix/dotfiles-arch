@@ -112,7 +112,7 @@
   "lockDateFormat": "",
   "mediaSize": 1,
   "appLauncherViewMode": "list",
-  "spotlightModalViewMode": "grid",
+  "spotlightModalViewMode": "list",
   "sortAppsAlphabetically": false,
   "appLauncherGridColumns": 6,
   "spotlightCloseNiriOverview": true,
@@ -266,6 +266,10 @@
       ],
       "centerWidgets": [
         {
+          "id": "clock",
+          "enabled": true
+        },
+        {
           "id": "workspaceSwitcher",
           "enabled": true
         },
@@ -289,10 +293,6 @@
         },
         {
           "id": "controlCenterButton",
-          "enabled": true
-        },
-        {
-          "id": "clock",
           "enabled": true
         }{{ if eq .chezmoi.hostname "PHOENIX-LTLIN01" }},
         {
