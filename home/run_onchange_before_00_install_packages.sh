@@ -7,6 +7,8 @@ PACKAGES=(
   # IMPORTANT
   "niri"
   "dms-shell-bin"
+  "quickshell-git"
+  "matugen"
   "polkit-kde-agent"
   "sddm"
   "sddm-silent-theme"
