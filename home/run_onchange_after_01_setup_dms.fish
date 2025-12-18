@@ -3,16 +3,16 @@
 printf "\n======== [dms] ========\n"
 set DMS_PLUGINS (dms plugins list)
 
-if string match -q -r "ID: dankPomodoroTimer" $DMS_PLUGINS
-  echo "✅ 'Dank Pomodoro Timer' plugin installed"
-else
-  echo "📦 Installing 'Dank Pomodoro Timer' plugin..."
-  dms plugins install dankPomodoroTimer
+function install_plugin_if_not_exist -a id -a name
+  if string match -q -r "ID: $id" $DMS_PLUGINS
+    echo "✅ '$name' plugin installed"
+  else
+    echo "📦 Installing '$name' plugin..."
+    dms plugins install $id
+  end
 end
 
-if string match -q -r "ID: emojiLauncher" $DMS_PLUGINS
-  echo "✅ 'Emoji & Unicode Launcher' plugin installed"
-else
-  echo "📦 Installing 'Emoji & Unicode Launcher' plugin..."
-  dms plugins install emojiLauncher
-end
+install_plugin_if_not_exist dankPomodoroTimer "Dank Pomodoro Timer"
+install_plugin_if_not_exist emojiLauncher "Emoji & Unicode Launcher"
+install_plugin_if_not_exist calculator "Calculator"
+
