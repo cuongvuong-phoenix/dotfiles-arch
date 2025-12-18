@@ -25,7 +25,7 @@ PACKAGES=(
   "whitesur-gtk-theme"
 
   "qt5ct"
-  "qt6ct"
+  "qt6ct-kde"
   "darkly-bin"
   "papirus-icon-theme"
   "papirus-folders-catppuccin-git"
@@ -95,6 +95,7 @@ PACKAGES=(
   "xdman-beta-bin"
 
   # Media & Utilities
+  "libreoffice-still"
   "wayscriber-bin"
   "qimgv"
   "gimp"
