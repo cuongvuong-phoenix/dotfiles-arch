@@ -11,9 +11,17 @@ PACKAGES=(
   "sddm"
   "sddm-silent-theme"
   "kanshi"
+  "xdg-desktop-portal-gtk"
+  "xdg-desktop-portal-gnome"
+  "gnome-keyring" # Need this on systems that are not a full DE like Niri. # TODO: Switch to `keypassxc` for more advanced controls
+  "seahorse"
 
   # Essentials
   "swww"
+
+  "adw-gtk-theme" # Force correct (dark) theme for some stubborn apps (e.g. `gnome-keyring` prompt)
+  "whitesur-gtk-theme"
+
   "qt5ct"
   "qt6ct"
   "darkly-bin"
@@ -21,7 +29,7 @@ PACKAGES=(
   "papirus-folders-catppuccin-git"
   "dolphin"
   "archlinux-xdg-menu"
-  "xdg-desktop-portal-kde" # Use KDE for most portals instead of ugly Gnome/GTK
+  # "xdg-desktop-portal-kde" # Use KDE for most portals instead of ugly Gnome/GTK (turned off because it's being timed out when using as the default portal)
 
   "yazi"
   "xdg-desktop-portal-termfilechooser-hunkyburrito-git" # Use `yazi` for the File Chooser portal
@@ -32,13 +40,11 @@ PACKAGES=(
   "bibata-cursor-theme-bin"
   "fcitx5-im"
   "fcitx5-bamboo"
-  "whitesur-gtk-theme"
 
   # Security & Privacy
   "prek-bin" # `pre-commit` re-engineered in Rust
   "bitwarden"
   "1password"
-  "gnome-keyring" # For `1password` 2FA. Need this on systems like Niri.
   "cloudflare-warp-bin"
   "proton-vpn-gtk-app"
 
