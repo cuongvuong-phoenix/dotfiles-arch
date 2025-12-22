@@ -65,8 +65,9 @@ binds {
     Mod+Q repeat=false { close-window; }
     Mod+F { maximize-column; }
     Mod+Shift+F { maximize-window-to-edges; }
-    Mod+Shift+T { toggle-window-floating; }
-    Mod+Shift+V { switch-focus-between-floating-and-tiling; }
+    Mod+Ctrl+F { fullscreen-window; }
+    Mod+Semicolon { switch-focus-between-floating-and-tiling; }
+    Mod+Shift+Semicolon { toggle-window-floating; }
     Mod+W { toggle-column-tabbed-display; }
 
     // === Focus Navigation ===
@@ -97,8 +98,8 @@ binds {
 
     // === Monitor Navigation ===
     Mod+Ctrl+Left  { focus-monitor-left; }
-    //Mod+Ctrl+Down  { focus-monitor-down; }
-    //Mod+Ctrl+Up    { focus-monitor-up; }
+    Mod+Ctrl+Down  { focus-monitor-down; }
+    Mod+Ctrl+Up    { focus-monitor-up; }
     Mod+Ctrl+Right { focus-monitor-right; }
     Mod+Ctrl+H     { focus-monitor-left; }
     Mod+Ctrl+J     { focus-monitor-down; }
@@ -120,8 +121,8 @@ binds {
     Mod+Page_Up         { focus-workspace-up; }
     Mod+U               { focus-workspace-down; }
     Mod+I               { focus-workspace-up; }
-    Mod+Ctrl+Down       { move-column-to-workspace-down; }
-    Mod+Ctrl+Up         { move-column-to-workspace-up; }
+    Mod+Ctrl+Page_Down  { move-column-to-workspace-down; }
+    Mod+Ctrl+Page_Up    { move-column-to-workspace-up; }
     Mod+Ctrl+U          { move-column-to-workspace-down; }
     Mod+Ctrl+I          { move-column-to-workspace-up; }
 
@@ -178,7 +179,6 @@ binds {
     Mod+R { switch-preset-column-width; }
     Mod+Shift+R { switch-preset-window-height; }
     Mod+Ctrl+R { reset-window-height; }
-    Mod+Ctrl+F { expand-column-to-available-width; }
     Mod+C { center-column; }
     Mod+Ctrl+C { center-visible-columns; }
 
