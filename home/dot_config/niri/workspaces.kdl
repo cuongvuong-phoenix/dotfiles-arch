@@ -15,7 +15,7 @@ workspace "Work (Project 2 - Extras)"
 workspace "Gaming"
 
 window-rule {
-    match app-id="ferdium"
+    match app-id="Ferdium"
     match app-id="Slack"
 
     open-on-workspace "Chat"
