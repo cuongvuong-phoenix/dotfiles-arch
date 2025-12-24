@@ -105,7 +105,7 @@ PACKAGES=(
   "spotify"
   "obsidian"
   "rustdesk-bin"
-  "qdirstat-bin"
+  "gdu"
   "okular"
   "kruler"
 

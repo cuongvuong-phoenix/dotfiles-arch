@@ -1,0 +1,62 @@
+# Based on Yazi OneDark theme (~/.config/yazi/flavors/onedark.yazi)
+style:
+    footer:
+        text-color: '#abb2bf'
+        background-color: '#282c34'
+        number-color: '#e67100'
+    selected-row:
+        text-color: '#282c34'
+        background-color: '#abb2bf'
+    result-row:
+        number-color: '#e67100'
+        directory-color: '#61afef'
+    header:
+        text-color: '#abb2bf'
+        background-color: '#282c34'
+        hidden: true
+    progress-modal:
+        current-item-path-max-len: 0
+    use-old-size-bar: false
+sorting:
+    by: ""
+    order: ""
+log-file: /dev/null
+input-file: ""
+output-file: ""
+ignore-from-file: ""
+storage-path: /tmp/badger
+ignore-dirs:
+    - /proc
+    - /dev
+    - /sys
+    - /run
+ignore-dir-patterns: []
+max-cores: 16
+top: 0
+sequential-scanning: false
+show-apparent-size: false
+show-relative-size: false
+show-annexed-size: false
+show-item-count: false
+show-mtime: false
+no-color: false
+mouse: true
+non-interactive: false
+no-progress: false
+no-unicode: false
+no-cross: false
+no-hidden: false
+no-delete: false
+no-spawn-shell: false
+follow-symlinks: false
+profiling: false
+const-gc: false
+use-storage: false
+read-from-storage: false
+summarize: false
+use-si-prefix: false
+no-prefix: false
+reverse-sort: false
+change-cwd: false
+delete-in-background: false
+delete-in-parallel: false
