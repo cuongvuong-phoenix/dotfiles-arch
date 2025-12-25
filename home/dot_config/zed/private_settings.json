@@ -9,23 +9,23 @@
 {
   "telemetry": {
     "diagnostics": false,
-    "metrics": false
+    "metrics": false,
   },
   "restore_on_startup": "last_session", // To make reload works as expected...
   //-------------------------------- 🎨 UI --------------------------------
   "ui_font_size": 16,
   "theme": "One Dark Pro",
   "experimental.theme_overrides": {
-    "search.match_background": "#d19a6620"
+    "search.match_background": "#d19a6620",
   },
   "icon_theme": "Material Icon Theme",
   "project_panel": {
-    "auto_fold_dirs": false
+    "auto_fold_dirs": false,
   },
   "tabs": {
     "file_icons": true,
     "git_status": true,
-    "show_diagnostics": "all"
+    "show_diagnostics": "all",
   },
   "buffer_font_size": null,
   "buffer_font_family": "JetBrainsMono Nerd Font",
@@ -34,16 +34,16 @@
   "indent_guides": {
     "enabled": true,
     "coloring": "indent_aware",
-    "active_line_width": 2
+    "active_line_width": 2,
   },
   //-------------------------------- 🤖 AI --------------------------------
   // Disable everything: https://github.com/zed-industries/zed/discussions/16750#discussioncomment-13518876
   "disable_ai": true,
   "features": {
-    "edit_prediction_provider": "none"
+    "edit_prediction_provider": "none",
   },
   "agent": {
-    "enabled": false
+    "enabled": false,
   },
   "language_models": {
     "anthropic": { "api_url": "" },
@@ -53,17 +53,17 @@
     "open_router": { "api_url": "" },
     "lmstudio": { "api_url": "" },
     "deepseek": { "api_url": "" },
-    "mistral": { "api_url": "" }
+    "mistral": { "api_url": "" },
   },
   //-------------------------------- 🚀 Vim --------------------------------
   "vim_mode": true,
   "vim": {
-    "use_system_clipboard": "on_yank"
+    "use_system_clipboard": "on_yank",
   },
   "relative_line_numbers": "enabled",
   //-------------------------------- 🌎️ Languages --------------------------------
   "file_types": {
-    "Ruby": ["rbi"]
+    "Ruby": ["rbi"],
   },
   "tab_size": 2,
 
@@ -71,74 +71,71 @@
     "Rust": {
       "tab_size": 4,
       "inlay_hints": {
-        "enabled": true
-      }
+        "enabled": true,
+      },
     },
     "Ruby": {
-      "language_servers": ["ruby-lsp", "rubocop", "sorbet", "!solargraph", "!steep", "..."]
+      "language_servers": ["ruby-lsp", "rubocop", "sorbet", "!solargraph", "!steep", "..."],
     },
     "JavaScript": {
-      // Use ESLint as the only formatter
-      "formatter": { "language_server": { "name": "" } },
+      "formatter": [], // Use ESLint as the only formatter
       "code_actions_on_format": {
-        "source.fixAll.eslint": true
-      }
+        "source.fixAll.eslint": true,
+      },
     },
     "TypeScript": {
-      // Use ESLint as the only formatter
-      "formatter": { "language_server": { "name": "" } },
+      "formatter": [], // Use ESLint as the only formatter
       "code_actions_on_format": {
-        "source.fixAll.eslint": true
-      }
+        "source.fixAll.eslint": true,
+      },
     },
     "Vue.js": {
-      // Use ESLint as the only formatter
-      "formatter": { "language_server": { "name": "" } },
+      "formatter": [], // Use ESLint as the only formatter
       "code_actions_on_format": {
-        "source.fixAll.eslint": true
+        "source.fixAll.eslint": true,
       },
       "language_servers": [
         // Hybrid Mode
         "vtsls",
         // Disable UnoCSS by default, need to explicitly enable per project
         "!unocss-language-server",
-        "..."
-      ]
+        "...",
+      ],
     },
     "SQL": {
       "formatter": {
         "external": {
           "command": "sql-formatter",
-          "arguments": ["--language", "postgresql", "--config", "~/Development/.sql-formatter.json"]
-        }
-      }
+          "arguments": ["--language", "postgresql", "--config", "~/Development/.sql-formatter.json"],
+        },
+      },
     },
 
     // ESLint for extra languages
     "JSON": {
       "code_actions_on_format": {
-        "source.fixAll.eslint": true
+        "source.fixAll.eslint": true,
       },
-      "language_servers": ["eslint", "..."]
+      "language_servers": ["eslint", "..."],
     },
     "JSONC": {
       "code_actions_on_format": {
-        "source.fixAll.eslint": true
+        "source.fixAll.eslint": true,
       },
-      "language_servers": ["eslint", "..."]
+      "language_servers": ["eslint", "..."],
     },
     "CSS": {
       "code_actions_on_format": {
-        "source.fixAll.eslint": true
+        "source.fixAll.eslint": true,
       },
-      "language_servers": ["eslint", "..."]
+      "language_servers": ["eslint", "..."],
     },
-    "YAML": {
-      "code_actions_on_format": {
-        "source.fixAll.eslint": true
-      },
-      "language_servers": ["eslint", "..."]
-    }
+    // "YAML": {
+    //   "code_actions_on_format": {
+    //     "source.fixAll.eslint": true,
+    //   },
+    //   "language_servers": ["eslint", "..."],
+    // },
   },
 
   "lsp": {
@@ -147,19 +144,19 @@
       "initialization_options": {
         "checkOnSave": true,
         "check": {
-          "command": "clippy"
+          "command": "clippy",
         },
         "inlayHints": {
           "maxLength": null,
           "lifetimeElisionHints": {
             "useParameterNames": true,
-            "enable": "skip_trivial"
+            "enable": "skip_trivial",
           },
           "closureReturnTypeHints": {
-            "enable": "always"
-          }
-        }
-      }
+            "enable": "always",
+          },
+        },
+      },
     },
 
     // ESLint
@@ -198,17 +195,17 @@
     // Biome
     "biome": {
       "settings": {
-        "require_config_file": true
-      }
+        "require_config_file": true,
+      },
     },
 
     // Ruby
     "ruby-lsp": {
       "initialization_options": {
         "enabledFeatures": {
-          "diagnostics": false
-        }
-      }
-    }
-  }
+          "diagnostics": false,
+        },
+      },
+    },
+  },
 }
