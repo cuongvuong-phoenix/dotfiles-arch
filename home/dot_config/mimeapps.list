@@ -1,0 +1,25 @@
+
+[Default Applications]
+image/jpeg=qimgv.desktop
+image/gif=qimgv.desktop
+image/png=qimgv.desktop
+image/bmp=qimgv.desktop
+image/webp=qimgv.desktop
+video/webm=qimgv.desktop
+
+application/pdf=okularApplication_pdf.desktop
+application/x-gzpdf=okularApplication_pdf.desktop
+application/x-bzpdf=okularApplication_pdf.desktop
+application/x-wwf=okularApplication_pdf.desktop
+
+application/rdf+xml=microsoft-edge.desktop
+application/rss+xml=microsoft-edge.desktop
+application/xhtml+xml=microsoft-edge.desktop
+application/xhtml_xml=microsoft-edge.desktop
+application/xml=microsoft-edge.desktop
+text/html=microsoft-edge.desktop
+text/xml=microsoft-edge.desktop
+x-scheme-handler/http=microsoft-edge.desktop
+x-scheme-handler/https=microsoft-edge.desktop
+x-scheme-handler/ipfs=microsoft-edge.desktop
+x-scheme-handler/ipns=microsoft-edge.desktop
