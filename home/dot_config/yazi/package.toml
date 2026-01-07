@@ -57,3 +57,8 @@ hash = "57056b9728006881d580ccabe8154a9c"
 use = "BennyOe/onedark"
 rev = "668d71d"
 hash = "1e647ba2d7c6e6f2bafe858ad9a4e50a"
+
+[[flavor.deps]]
+use = "BennyOe/tokyo-night"
+rev = "8e6296f"
+hash = "d9da921c3bd37ba32ee27a8a7a40461f"
