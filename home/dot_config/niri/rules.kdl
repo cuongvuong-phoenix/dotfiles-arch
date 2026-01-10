@@ -90,8 +90,8 @@ window-rule {
 
 // Specific dimensions
 window-rule {
-    match title="Terminal File Chooser"
-    match title="Task Manager"
+    match app-id="file_chooser"
+    match app-id="task_manager"
 
     open-floating true
     default-column-width { proportion 0.5; }
