@@ -22,5 +22,6 @@ return {
   ---@type render.md.UserConfig
   opts = {
     enabled = false, -- disable by default
+    render_modes = true,
   },
 }
