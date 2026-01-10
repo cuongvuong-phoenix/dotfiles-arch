@@ -29,7 +29,7 @@ else
     set -- --chooser-file="$out" "$path"
 fi
 
-command="kitty --class=file_chooser --title 'Terminal File Chooser' -e yazi"
+command="kitty --class=file_chooser -T 'Terminal File Chooser' -o background_opacity=1 -e yazi"
 for arg in "$@"; do
     # escape double quotes
     escaped=$(printf "%s" "$arg" | sed 's/"/\\"/g')
