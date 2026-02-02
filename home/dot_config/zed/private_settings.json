@@ -94,13 +94,11 @@
       "code_actions_on_format": {
         "source.fixAll.eslint": true,
       },
-      "language_servers": [
-        // Hybrid Mode
-        "vtsls",
-        // Disable UnoCSS by default, need to explicitly enable per project
-        "!unocss-language-server",
-        "...",
-      ],
+      // "language_servers": [
+      //   // Hybrid Mode
+      //   "vtsls",
+      //   "...",
+      // ],
     },
     "SQL": {
       "formatter": {
