@@ -63,8 +63,8 @@ binds {
 
     // === Window Management ===
     Mod+Q repeat=false { close-window; }
-    Mod+F { maximize-column; }
-    Mod+Shift+F { maximize-window-to-edges; }
+    Mod+F { maximize-window-to-edges; }
+    Mod+Shift+F { maximize-column; }
     Mod+Ctrl+F { fullscreen-window; }
     Mod+Semicolon { switch-focus-between-floating-and-tiling; }
     Mod+Shift+Semicolon { toggle-window-floating; }
