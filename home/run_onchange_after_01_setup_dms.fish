@@ -14,5 +14,4 @@ end
 
 install_plugin_if_not_exist dankPomodoroTimer "Dank Pomodoro Timer"
 install_plugin_if_not_exist emojiLauncher "Emoji & Unicode Launcher"
-install_plugin_if_not_exist calculator "Calculator"
 
