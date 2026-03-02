@@ -4,11 +4,7 @@
     "autoStartBreaks": true
   },
   "emojiLauncher": {
-    "enabled": true
-  },
-  "calculator": {
     "enabled": true,
-    "trigger": "=",
-    "noTrigger": true
+    "trigger": ":"
   }
 }
