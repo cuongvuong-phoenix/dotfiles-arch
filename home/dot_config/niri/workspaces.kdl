@@ -28,5 +28,5 @@ window-rule {
 
     open-on-workspace "Gaming"
     open-focused true
-    default-column-width { proportion 1.0; }
+    open-maximized-to-edges true
 }
