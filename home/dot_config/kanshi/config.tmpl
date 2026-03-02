@@ -21,6 +21,12 @@ output "ASUSTek COMPUTER INC VG34VQL3A S3LMDW009542" {
   alias $HOLISTICS
 }
 
+output "Dell Inc. DELL U2419H JW3TC23" {
+  mode 1920x1080@60.000
+  scale 1.0
+  alias $HOME_DAKLAK
+}
+
 profile internal-only {
   output $INTERNAL enable
 }
@@ -28,5 +34,10 @@ profile internal-only {
 profile dual-holistics {
   output $INTERNAL disable
   output $HOLISTICS enable
+}
+
+profile home-daklak {
+  output $INTERNAL disable
+  output $HOME_DAKLAK enable
 }
 {{- end }}
