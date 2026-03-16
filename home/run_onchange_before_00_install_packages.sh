@@ -49,6 +49,7 @@ PACKAGES=(
   "1password"
   "cloudflare-warp-bin"
   "proton-vpn-gtk-app"
+  "tailscale"
 
   # Terminal
   "kitty"
