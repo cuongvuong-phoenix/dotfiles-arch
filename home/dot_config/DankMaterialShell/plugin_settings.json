@@ -6,5 +6,9 @@
   "emojiLauncher": {
     "enabled": true,
     "trigger": ":"
+  },
+  "calculator": {
+    "enabled": true,
+    "trigger": "="
   }
 }
