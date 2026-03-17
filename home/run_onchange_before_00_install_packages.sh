@@ -85,7 +85,7 @@ PACKAGES=(
   "postgresql"
   "mariadb"
   "valkey"
-  "duckdb-bin"
+  "duckdb"
 
   "github-cli"
   "claude-code"
