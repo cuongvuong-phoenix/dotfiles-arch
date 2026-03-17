@@ -1,3 +1,67 @@
+🤔 thinking face dev gitmoji
+👌 OK hand dev gitmoji
+👉 backhand index pointing right hint todo dev gitmoji
+👍 thumbs up nice good dev gitmoji
+💪 flexed biceps strong arm muscle dev gitmoji
+🚀 rocket dev gitmoji
+🎨 artist palette dev gitmoji
+⚡ high voltage flash zap dev gitmoji
+📦 package dev gitmoji
+🔥 fire dev gitmoji
+🐛 bug dev gitmoji
+🚑 ambulance dev gitmoji
+💊 pill medicine drug fix dev gitmoji
+🩹 adhesive bandage fix dev gitmoji
+🗑️ wastebasket trash clean dev gitmoji
+🧹 broom remove clear dev gitmoji
+💡 light bulb lamp hint dev gitmoji
+🧪 test tube experiment dev gitmoji
+💫 dizzy stunned animation transition dev gitmoji
+✨ sparkles new dev gitmoji
+💄 lipstick dev gitmoji
+🎉 party popper tada dev gitmoji
+💥 collision breaking change dev gitmoji
+🏗️ building construction architecture dev gitmoji
+🗃️ card file box database dev gitmoji
+👻 ghost dev gitmoji
+👽 alien external dev gitmoji
+📢 loudspeaker announcement dev gitmoji
+📌 pushpin dev gitmoji
+🔧 wrench config dev gitmoji
+⚒️ hammer and pick dev gitmoji
+🔍 magnifying glass tilted left dev gitmoji
+✅ check mark button dev gitmoji
+❌ cross mark dev gitmoji
+🚨 police car light alert dev gitmoji
+⚠️ warning dev gitmoji
+🚧 construction warning dev gitmoji
+📝 memo note dev gitmoji
+✏️ pencil note typos dev gitmoji
+💬 speech balloon copy typos dev gitmoji
+📸 camera with flash snapshot dev gitmoji
+⬇️ down arrow dev gitmoji
+⬆️ up arrow dev gitmoji
+♻️ recycling symbol refactor dev gitmoji
+➕ plus add dev gitmoji
+➖ minus remove dev gitmoji
+⏪ fast reverse button revert dev gitmoji
+🔀 shuffle tracks button merge dev gitmoji
+🔖 bookmark dev gitmoji
+🚩 triangular flag checkpoint feature-flag dev
+🥅 goal net catch dev gitmoji
+🩺 stethoscope healthcheck dev gitmoji
+🧵 thread multithread concurrency dev gitmoji
+🦺 safety vest validation dev gitmoji
+💸 money with wings sponsor dev gitmoji
+✈️ airplane offline dev gitmoji
+🚚 delivery truck bulk dev gitmoji
+📱 mobile phone responsive dev gitmoji
+🥚 egg dev gitmoji
+🌱 seedling dev gitmoji
+🦖 T-Rex old ancient backward dev gitmoji
+⚰️ coffin dead dev gitmoji
+🔒 locked dev gitmoji
+
 😀 grinning face
 😃 grinning face with big eyes
 😄 grinning face with smiling eyes
@@ -32,7 +96,6 @@
 🫢 face with open eyes and hand over mouth
 🫣 face with peeking eye
 🤫 shushing face
-🤔 thinking face
 🫡 saluting face
 🤐 zipper-mouth face
 🤨 face with raised eyebrow
@@ -109,11 +172,8 @@
 💀 skull dev
 ☠️ skull and crossbones
 💩 pile of poo
-🤡 clown face
 👹 ogre
 👺 goblin
-👻 ghost dev
-👽 alien
 👾 alien monster
 🤖 robot dev
 😺 grinning cat
@@ -156,12 +216,9 @@
 💋 kiss mark
 💯 hundred points
 💢 anger symbol
-💥 collision
-💫 dizzy stunned
 💦 sweat droplets dev
 💨 dashing away dev
 🕳️ hole
-💬 speech balloon
 👁️‍🗨️ eye in speech bubble
 🗨️ left speech bubble
 🗯️ right anger bubble
@@ -178,7 +235,6 @@
 🫴 palm up hand
 🫷 leftwards pushing hand
 🫸 rightwards pushing hand
-👌 OK hand
 🤌 pinched fingers
 🤏 pinching hand
 ✌️ victory hand
@@ -188,13 +244,11 @@
 🤘 sign of the horns
 🤙 call me hand
 👈 backhand index pointing left
-👉 backhand index pointing right
 👆 backhand index pointing up
 🖕 middle finger
 👇 backhand index pointing down
 ☝️ index pointing up
 🫵 index pointing at the viewer
-👍 thumbs up dev
 👎 thumbs down
 ✊ raised fist
 👊 oncoming fist
@@ -210,7 +264,6 @@
 ✍️ writing hand
 💅 nail polish
 🤳 selfie
-💪 flexed biceps strong arm muscle dev
 🦾 mechanical arm
 🦿 mechanical leg
 🦵 leg
@@ -647,9 +700,8 @@
 🦎 lizard
 🐍 snake
 🐲 dragon face
-🐉 dragon dev
+🐉 dragon myth dev
 🦕 sauropod
-🦖 T-Rex
 🐳 spouting whale
 🐋 whale
 🐬 dolphin
@@ -669,7 +721,6 @@
 🦪 oyster
 🐌 snail
 🦋 butterfly
-🐛 bug dev
 🐜 ant
 🐝 honeybee
 🪲 beetle
@@ -695,7 +746,6 @@
 🌼 blossom dev
 🌷 tulip
 🪻 hyacinth
-🌱 seedling dev
 🪴 potted plant
 🌲 evergreen tree
 🌳 deciduous tree dev
@@ -774,7 +824,6 @@
 🫔 tamale
 🥙 stuffed flatbread
 🧆 falafel
-🥚 egg
 🍳 cooking
 🥘 shallow pan of food
 🍲 pot of food
@@ -861,7 +910,6 @@
 🏞️ national park
 🏟️ stadium
 🏛️ classical building
-🏗️ building construction
 🧱 brick
 🪨 rock
 🏘️ houses
@@ -923,7 +971,6 @@
 🚍 oncoming bus
 🚎 trolleybus
 🚐 minibus
-🚑 ambulance
 🚒 fire engine
 🚓 police car
 🚔 oncoming police car
@@ -933,7 +980,6 @@
 🚘 oncoming automobile
 🚙 sport utility vehicle
 🛻 pickup truck
-🚚 delivery truck
 🚛 articulated lorry
 🚜 tractor
 🏎️ racing car
@@ -952,11 +998,9 @@
 🛢️ oil drum
 ⛽ fuel pump
 🛞 wheel
-🚨 police car light alert dev
 🚥 horizontal traffic light
 🚦 vertical traffic light
 🛑 stop sign
-🚧 construction warning dev
 ⚓ anchor dev
 🛟 ring buoy
 ⛵ sailboat
@@ -966,7 +1010,6 @@
 ⛴️ ferry
 🛥️ motor boat
 🚢 ship dev
-✈️ airplane dev
 🛩️ small airplane
 🛫 airplane departure
 🛬 airplane arrival
@@ -977,7 +1020,6 @@
 🚠 mountain cableway
 🚡 aerial tramway
 🛰️ satellite
-🚀 rocket dev
 🛸 flying saucer
 🛎️ bellhop bell
 🧳 luggage
@@ -1051,12 +1093,10 @@
 ☂️ umbrella
 ☔ umbrella with rain drops
 ⛱️ umbrella on ground
-⚡ high voltage flash thunder dev
 ❄️ snowflake dev
 ☃️ snowman
 ⛄ snowman without snow
 ☄️ comet
-🔥 fire dev
 💧 droplet dev
 🌊 water wave
 🎃 jack-o-lantern
@@ -1064,9 +1104,7 @@
 🎆 fireworks
 🎇 sparkler
 🧨 firecracker
-✨ sparkles dev
 🎈 balloon
-🎉 party popper
 🎊 confetti ball
 🎋 tanabata tree
 🎍 pine decoration
@@ -1104,7 +1142,6 @@
 🏸 badminton
 🥊 boxing glove
 🥋 martial arts uniform
-🥅 goal net
 ⛳ flag in hole
 ⛸️ ice skate
 🎣 fishing pole
@@ -1139,8 +1176,6 @@
 🎴 flower playing cards
 🎭 performing arts
 🖼️ framed picture
-🎨 artist palette dev
-🧵 thread
 🪡 sewing needle
 🧶 yarn
 🪢 knot
@@ -1148,7 +1183,6 @@
 🕶️ sunglasses
 🥽 goggles
 🥼 lab coat
-🦺 safety vest
 👔 necktie
 👕 t-shirt
 👖 jeans
@@ -1188,14 +1222,12 @@
 🪖 military helmet
 ⛑️ rescue worker’s helmet
 📿 prayer beads
-💄 lipstick
 💍 ring
 💎 gem stone
 🔇 muted speaker
 🔈 speaker low volume
 🔉 speaker medium volume
 🔊 speaker high volume
-📢 loudspeaker
 📣 megaphone
 📯 postal horn
 🔔 bell dev
@@ -1221,7 +1253,6 @@
 🪇 maracas
 🪈 flute
 🪉 harp
-📱 mobile phone
 📲 mobile phone with arrow
 ☎️ telephone
 📞 telephone receiver
@@ -1247,13 +1278,10 @@
 🎬 clapper board
 📺 television
 📷 camera
-📸 camera with flash
 📹 video camera
 📼 videocassette
-🔍 magnifying glass tilted left dev
 🔎 magnifying glass tilted right
 🕯️ candle
-💡 light bulb lamp dev
 🔦 flashlight
 🏮 red paper lantern
 🪔 diya lamp
@@ -1272,15 +1300,13 @@
 📰 newspaper
 🗞️ rolled-up newspaper
 📑 bookmark tabs
-🔖 bookmark
-🏷️ label
+🏷️ label types dev gitmoji
 💰 money bag dev
 🪙 coin money
 💴 yen banknote
 💵 dollar banknote
 💶 euro banknote
 💷 pound banknote
-💸 money with wings dev
 💳 credit card
 🧾 receipt
 💹 chart increasing with yen
@@ -1290,20 +1316,17 @@
 📩 envelope with arrow
 📤 outbox tray
 📥 inbox tray
-📦 package dev
 📫 closed mailbox with raised flag
 📪 closed mailbox with lowered flag
 📬 open mailbox with raised flag
 📭 open mailbox with lowered flag
 📮 postbox
 🗳️ ballot box with ballot
-✏️ pencil dev
 ✒️ black nib
 🖋️ fountain pen
 🖊️ pen
 🖌️ paintbrush
 🖍️ crayon
-📝 memo
 💼 briefcase dev
 📁 file folder
 📂 open file folder
@@ -1317,17 +1340,13 @@
 📉 chart decreasing
 📊 bar chart
 📋 clipboard
-📌 pushpin dev
 📍 round pushpin guide
 📎 paperclip
 🖇️ linked paperclips
 📏 straight ruler
 📐 triangular ruler
 ✂️ scissors
-🗃️ card file box
 🗄️ file cabinet
-🗑️ wastebasket trash dev
-🔒 locked
 🔓 unlocked
 🔏 locked with pen
 🔐 locked with key
@@ -1336,7 +1355,6 @@
 🔨 hammer
 🪓 axe
 ⛏️ pick
-⚒️ hammer and pick dev
 🛠️ hammer and wrench
 🗡️ dagger
 ⚔️ crossed swords
@@ -1345,7 +1363,6 @@
 🏹 bow and arrow
 🛡️ shield
 🪚 carpentry saw
-🔧 wrench
 🪛 screwdriver
 🔩 nut and bolt
 ⚙️ gear dev
@@ -1361,7 +1378,6 @@
 🪜 ladder
 🪏 shovel dig dev
 ⚗️ alembic
-🧪 test tube dev
 🧫 petri dish
 🧬 dna gene
 🔬 microscope
@@ -1369,10 +1385,7 @@
 📡 satellite antenna
 💉 syringe inject
 🩸 drop of blood
-💊 pill medicine drug dev
-🩹 adhesive bandage
 🩼 crutch
-🩺 stethoscope
 🩻 x-ray
 🚪 door
 🛗 elevator
@@ -1389,7 +1402,6 @@
 🪒 razor
 🧴 lotion bottle
 🧷 safety pin
-🧹 broom clean clear dev
 🧺 basket
 🧻 roll of paper
 🪣 bucket
@@ -1400,7 +1412,6 @@
 🧯 fire extinguisher
 🛒 shopping cart
 🚬 cigarette
-⚰️ coffin
 🪦 headstone
 ⚱️ funeral urn
 🧿 nazar amulet
@@ -1411,7 +1422,7 @@
 🏧 ATM sign
 🚮 litter in bin sign
 🚰 potable water
-♿ wheelchair symbol
+♿ wheelchair symbol accessibility a11y dev gitmoji
 🚹 men’s room
 🚺 women’s room
 🚻 restroom
@@ -1421,7 +1432,6 @@
 🛃 customs
 🛄 baggage claim
 🛅 left luggage
-⚠️ warning dev
 🚸 children crossing
 ⛔ no entry
 🚫 prohibited
@@ -1434,11 +1444,9 @@
 🔞 no one under eighteen
 ☢️ radioactive
 ☣️ biohazard
-⬆️ up arrow
 ↗️ up-right arrow
 ➡️ right arrow
 ↘️ down-right arrow
-⬇️ down arrow
 ↙️ down-left arrow
 ⬅️ left arrow
 ↖️ up-left arrow
@@ -1481,7 +1489,6 @@
 ♒ Aquarius
 ♓ Pisces
 ⛎ Ophiuchus
-🔀 shuffle tracks button
 🔁 repeat button
 🔂 repeat single button
 ▶️ play button
@@ -1489,7 +1496,6 @@
 ⏭️ next track button
 ⏯️ play or pause button
 ◀️ reverse button
-⏪ fast reverse button
 ⏮️ last track button
 🔼 upwards button
 ⏫ fast up button
@@ -1510,8 +1516,6 @@
 ♂️ male sign
 ⚧️ transgender symbol
 ✖️ multiply
-➕ plus
-➖ minus
 ➗ divide
 🟰 heavy equals sign
 ♾️ infinity
@@ -1525,16 +1529,13 @@
 💱 currency exchange
 💲 heavy dollar sign money
 ⚕️ medical symbol
-♻️ recycling symbol
 ⚜️ fleur-de-lis
 🔱 trident emblem
 📛 name badge
 🔰 Japanese symbol for beginner
 ⭕ hollow red circle
-✅ check mark button dev
 ☑️ check box with check
 ✔️ check mark
-❌ cross mark dev
 ❎ cross mark button
 ➰ curly loop
 ➿ double curly loop
@@ -1633,7 +1634,6 @@
 🔳 white square button
 🔲 black square button
 🏁 chequered flag
-🚩 triangular flag checkpoint dev
 🎌 crossed flags
 🏴 black flag
 🏳️ white flag
