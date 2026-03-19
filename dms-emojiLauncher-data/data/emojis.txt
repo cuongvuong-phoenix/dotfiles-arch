@@ -21,6 +21,9 @@
 💄 lipstick dev gitmoji
 🎉 party popper tada dev gitmoji
 💥 collision breaking change dev gitmoji
+🥚 egg discovery dev gitmoji
+🌱 seedling dev gitmoji
+🦖 T-Rex old ancient backward dev gitmoji
 🏗️ building construction architecture dev gitmoji
 🗃️ card file box database dev gitmoji
 👻 ghost dev gitmoji
@@ -56,9 +59,6 @@
 ✈️ airplane offline dev gitmoji
 🚚 delivery truck bulk dev gitmoji
 📱 mobile phone responsive dev gitmoji
-🥚 egg dev gitmoji
-🌱 seedling dev gitmoji
-🦖 T-Rex old ancient backward dev gitmoji
 ⚰️ coffin dead dev gitmoji
 🔒 locked dev gitmoji
 
