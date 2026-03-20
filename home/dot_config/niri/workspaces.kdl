@@ -8,10 +8,12 @@ workspace "Chat" {
         center-focused-column "always"
     }
 }
-workspace "Work (Project 1)"
-workspace "Work (Project 1 - Extras)"
-workspace "Work (Project 2)"
-workspace "Work (Project 2 - Extras)"
+workspace "Work (Project 1 - Browser)"
+workspace "Work (Project 1 - IDE)"
+workspace "Work (Project 1 - Build)"
+workspace "Work (Project 2 - Browser)"
+workspace "Work (Project 2 - IDE)"
+workspace "Work (Project 2 - Build)"
 workspace "Gaming"
 
 window-rule {
