@@ -7,6 +7,9 @@
 // custom settings, run `zed: open default settings` from the
 // command palette
 {
+  "edit_predictions": {
+    "provider": "none",
+  },
   "telemetry": {
     "diagnostics": false,
     "metrics": false,
@@ -39,9 +42,6 @@
   //-------------------------------- 🤖 AI --------------------------------
   // Disable everything: https://github.com/zed-industries/zed/discussions/16750#discussioncomment-13518876
   "disable_ai": true,
-  "features": {
-    "edit_prediction_provider": "none",
-  },
   "agent": {
     "enabled": false,
   },
@@ -75,7 +75,7 @@
       },
     },
     "Ruby": {
-      "language_servers": ["ruby-lsp", "rubocop", "sorbet", "!solargraph", "!steep", "..."],
+      "language_servers": ["ruby-lsp", "rubocop", "sorbet", "!solargraph", "!steep", "!kanayago", "..."],
     },
     "JavaScript": {
       "formatter": [], // Use ESLint as the only formatter
