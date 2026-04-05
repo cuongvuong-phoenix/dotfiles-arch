@@ -1,4 +1,4 @@
-# Cuong Phoenix' dotfiles
+# Cuong Phoenix's dotfiles
 
 ## 🚀 Setup
 

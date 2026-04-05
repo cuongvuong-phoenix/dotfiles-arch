@@ -5,7 +5,9 @@
   },
   "emojiLauncher": {
     "enabled": true,
-    "trigger": ":"
+    "trigger": ":",
+    "useDMS": false,
+    "pasteOnSelect": false
   },
   "calculator": {
     "enabled": true,
