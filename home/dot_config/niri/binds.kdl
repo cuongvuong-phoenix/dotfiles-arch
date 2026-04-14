@@ -192,7 +192,7 @@ binds {
     XF86Launch1 { screenshot; }
     Ctrl+XF86Launch1 { screenshot-screen; }
     Alt+XF86Launch1 { screenshot-window; }
-    Ctrl+Alt+A { screenshot show-pointer=false; }
+    Ctrl+Alt+A { spawn "sh" "-c" "grim -t ppm - | satty --filename - --fullscreen --output-filename ~/Pictures/Screenshots/satty-$(date '+%Y%m%d-%H:%M:%S').png"; }
     Ctrl+Print { screenshot-screen; }
     Alt+Print { screenshot-window; }
 

@@ -99,6 +99,8 @@ PACKAGES=(
   # Media & Utilities
   "libreoffice-still"
   "wayscriber-bin"
+  "grim"
+  "satty"
   "qimgv"
   "gimp"
   "vlc"
