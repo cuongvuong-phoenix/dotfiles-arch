@@ -6,7 +6,7 @@ PACKAGES=(
 
   # IMPORTANT
   "niri"
-  "dms-shell-bin"
+  "dms-shell"
   "quickshell-git"
   "matugen"
   "polkit-kde-agent"
