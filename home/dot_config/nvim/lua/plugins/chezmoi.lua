@@ -3,18 +3,18 @@
 
 ---@type LazySpec
 return {
-  { import = 'astrocommunity.pack.toml' },
+  { import = "astrocommunity.pack.toml" },
   {
-    'alker0/chezmoi.vim',
+    "alker0/chezmoi.vim",
     lazy = false,
     specs = {
       {
-        'AstroNvim/astrocore',
+        "AstroNvim/astrocore",
         opts = {
           options = {
             g = {
-              ['chezmoi#use_tmp_buffer'] = 1,
-              ['chezmoi#source_dir_path'] = os.getenv 'HOME' .. '/.local/share/chezmoi/home',
+              ["chezmoi#use_tmp_buffer"] = 1,
+              ["chezmoi#source_dir_path"] = os.getenv "HOME" .. "/.local/share/chezmoi/home",
             },
           },
         },

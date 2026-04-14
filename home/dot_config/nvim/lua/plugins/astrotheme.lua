@@ -1,13 +1,13 @@
 ---@type LazySpec
 return {
-  'AstroNvim/astrotheme',
+  "AstroNvim/astrotheme",
   opts = {
     highlights = {
       astrodark = {
         -- Like `Comment`, but without italic to make it easier to read.
-        ['CommentNormal'] = { fg = '#696c76' },
-        ['SnacksPickerDir'] = 'CommentNormal',
-        ['LspReferenceRead'] = 'Visual', -- Easier to spot relevant symbols
+        ["CommentNormal"] = { fg = "#696c76" },
+        ["SnacksPickerDir"] = "CommentNormal",
+        ["LspReferenceRead"] = "Visual", -- Easier to spot relevant symbols
       },
     },
   },

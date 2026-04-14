@@ -1,6 +1,6 @@
 ---@type LazySpec
 return {
-  'folke/noice.nvim',
+  "folke/noice.nvim",
   opts = {
     presets = {
       bottom_search = false, -- Can see number of matched in real-time
@@ -18,13 +18,13 @@ return {
       -- Hide unnecessary messages
       {
         filter = {
-          event = 'msg_show',
-          kind = '',
+          event = "msg_show",
+          kind = "",
           any = {
-            { find = 'fewer line' },
-            { find = 'more line' },
-            { find = 'lines yanked' },
-            { find = 'written' },
+            { find = "fewer line" },
+            { find = "more line" },
+            { find = "lines yanked" },
+            { find = "written" },
           },
         },
         opts = { skip = true },
@@ -32,8 +32,8 @@ return {
       -- Hide search count Virtual Text as it's closing on `:noh`
       {
         filter = {
-          event = 'msg_show',
-          kind = 'search_count',
+          event = "msg_show",
+          kind = "search_count",
         },
         opts = { skip = true },
       },

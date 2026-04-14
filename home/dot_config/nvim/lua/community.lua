@@ -1,33 +1,32 @@
 -- AstroCommunity: import any community modules here
 -- We import this file in `lazy_setup.lua` before the `plugins/` folder.
 -- This guarantees that the specs are processed before any user plugins.
---
--- NOTE: Modules are located at: ~/.local/share/nvim/lazy/astrocommunity/lua/astrocommunity/*
 
 ---@type LazySpec
 return {
-  'AstroNvim/astrocommunity',
+  "AstroNvim/astrocommunity",
   -- Recipes
   -- { import = 'astrocommunity.recipes.diagnostic-virtual-lines-current-line'},
-  { import = 'astrocommunity.recipes.auto-session-restore' },
+  { import = "astrocommunity.recipes.auto-session-restore" },
   -- Extras
-  { import = 'astrocommunity.utility.noice-nvim' },
-  { import = 'astrocommunity.comment.ts-comments-nvim' },
+  { import = "astrocommunity.utility.noice-nvim" },
+  { import = "astrocommunity.comment.ts-comments-nvim" },
   -- Languages
-  { import = 'astrocommunity.pack.lua' },
-  { import = 'astrocommunity.pack.toml' },
-  { import = 'astrocommunity.pack.yaml' },
-  { import = 'astrocommunity.pack.json' },
-  { import = 'astrocommunity.pack.just' },
-  { import = 'astrocommunity.pack.markdown' },
+  { import = "astrocommunity.pack.lua" },
+  { import = "astrocommunity.pack.toml" },
+  { import = "astrocommunity.pack.yaml" },
+  { import = "astrocommunity.pack.json" },
+  { import = "astrocommunity.pack.just" },
+  { import = "astrocommunity.pack.markdown" },
 
-  { import = 'astrocommunity.pack.html-css' },
-  { import = 'astrocommunity.pack.tailwindcss' },
-  { import = 'astrocommunity.pack.typescript-all-in-one' },
-  { import = 'astrocommunity.pack.vue' },
-  { import = 'astrocommunity.pack.eslint' },
+  { import = "astrocommunity.pack.html-css" },
+  { import = "astrocommunity.pack.tailwindcss" },
+  { import = "astrocommunity.pack.typescript-all-in-one" },
+  { import = "astrocommunity.pack.vue" },
+  { import = "astrocommunity.pack.eslint" },
 
-  { import = 'astrocommunity.pack.rust' },
+  { import = "astrocommunity.pack.rust" },
 
-  { import = 'astrocommunity.pack.sql' },
+  { import = "astrocommunity.pack.sql" },
+  -- import/override with your plugins folder
 }
