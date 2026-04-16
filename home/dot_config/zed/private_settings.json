@@ -39,6 +39,7 @@
     "coloring": "indent_aware",
     "active_line_width": 2,
   },
+  "document_folding_ranges": "on",
   //-------------------------------- 🤖 AI --------------------------------
   // Disable everything: https://github.com/zed-industries/zed/discussions/16750#discussioncomment-13518876
   "disable_ai": true,
