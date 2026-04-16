@@ -24,3 +24,4 @@ x-scheme-handler/https=microsoft-edge.desktop
 x-scheme-handler/ipfs=microsoft-edge.desktop
 x-scheme-handler/ipns=microsoft-edge.desktop
 x-scheme-handler/claude-cli=claude-code-url-handler.desktop
+x-scheme-handler/slack=slack.desktop

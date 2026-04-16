@@ -18,7 +18,7 @@ workspace "Gaming"
 
 window-rule {
     match app-id="Ferdium"
-    match app-id="Slack"
+    match app-id="slack"
 
     open-on-workspace "Chat"
     open-focused true
