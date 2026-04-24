@@ -7,6 +7,16 @@
 // custom settings, run `zed: open default settings` from the
 // command palette
 {
+  "cli_default_open_behavior": "new_window",
+  "outline_panel": {
+    "dock": "left"
+  },
+  "collaboration_panel": {
+    "dock": "left"
+  },
+  "git_panel": {
+    "dock": "left"
+  },
   "edit_predictions": {
     "provider": "none",
   },
@@ -23,6 +33,7 @@
   },
   "icon_theme": "Material Icon Theme",
   "project_panel": {
+    "dock": "left",
     "auto_fold_dirs": false,
   },
   "tabs": {
@@ -44,6 +55,7 @@
   // Disable everything: https://github.com/zed-industries/zed/discussions/16750#discussioncomment-13518876
   "disable_ai": true,
   "agent": {
+    "dock": "right",
     "enabled": false,
   },
   "language_models": {
