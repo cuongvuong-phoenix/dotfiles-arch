@@ -62,6 +62,13 @@
 ⚰️ coffin dead dev gitmoji
 🔒 locked dev gitmoji
 
+⏎ keyboard enter return dev
+⌫ keyboard backspace dev
+⌃ keyboard ctrl dev
+⇧ keyboard shift dev
+⌘ keyboard mac command dev
+⌥ keyboard mac option dev
+
 😀 grinning face
 😃 grinning face with big eyes
 😄 grinning face with smiling eyes
