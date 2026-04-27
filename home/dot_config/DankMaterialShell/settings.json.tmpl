@@ -43,6 +43,12 @@
   "modalAnimationSpeed": 1,
   "modalCustomAnimationDuration": 150,
   "enableRippleEffects": true,
+  "blurEnabled": false,
+  "blurForegroundLayers": true,
+  "blurLayerOutlineOpacity": 0.12,
+  "blurBorderColor": "outline",
+  "blurBorderCustomColor": "#ffffff",
+  "blurBorderOpacity": 0.35,
   "wallpaperFillMode": "Fill",
   "blurredWallpaperLayer": false,
   "blurWallpaperOnOverview": false,
@@ -59,6 +65,9 @@
   "selectedGpuIndex": 0,
   "enabledGpuPciIds": [],
   "showSystemTray": true,
+  "systemTrayIconTintMode": "none",
+  "systemTrayIconTintSaturation": 50,
+  "systemTrayIconTintStrength": 135,
   "showClock": true,
   "showNotificationButton": true,
   "showBattery": true,
@@ -416,7 +425,9 @@
   "updaterTerminalAdditionalParams": "",
   "displayNameMode": "model",
   "screenPreferences": {
-    "wallpaper": []
+    "wallpaper": [
+      "all"
+    ]
   },
   "showOnLastDisplay": {},
   "niriOutputSettings": {},
@@ -596,6 +607,9 @@
   "clipboardEnterToPaste": false,
   "launcherPluginVisibility": {
     "emojiLauncher": {
+      "allowWithoutTrigger": false
+    },
+    "dms_settings_search": {
       "allowWithoutTrigger": false
     }
   },

@@ -7,6 +7,7 @@ include "startup.kdl"
 include "env.kdl"
 include "misc.kdl"
 include "binds.kdl"
+include "blur.kdl"
 
 debug {
     honor-xdg-activation-with-invalid-serial

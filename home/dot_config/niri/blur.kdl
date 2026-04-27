@@ -1,0 +1,18 @@
+window-rule {
+    match is-active=false
+
+    opacity 0.9
+
+    background-effect {
+        blur true
+    }
+}
+
+window-rule {
+  match app-id="kitty"
+  match app-id="file_chooser"
+
+  background-effect {
+    blur true
+  }
+}
