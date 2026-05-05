@@ -140,7 +140,11 @@
       "t h": "pane::ActivatePreviousItem",
       "t [": "pane::SwapItemLeft",
       "t ]": "pane::SwapItemRight",
+      "t ;": "pane::TogglePreviewTab",
+      "t p": "pane::TogglePinTab",
+      
       "space z": "workspace::ToggleZoom",
+      
       "ctrl-shift-[": "editor::Fold", // Do we really need this?
       "ctrl-shift-]": "editor::UnfoldLines" // Do we really need this?
     }
