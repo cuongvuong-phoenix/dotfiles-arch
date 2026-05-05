@@ -23,17 +23,23 @@
       // "ctrl-v": "vim::Paste" // Don't know why using this make deletions become normal yanks!?
     }
   },
-  //-------------------------------- LSP  --------------------------------
+  //-------------------------------- 🤖 LSP  --------------------------------
   {
     "context": "VimControl && !menu",
     "bindings": {
-      "g shift-w": "project_symbols::Toggle"
+      "g shift-w": "project_symbols::Toggle",
+      "space l f": "editor::Format"
     }
   },
-  //-------------------------------- 🪟 Windows --------------------------------
+  //-------------------------------- 🪟 Panes --------------------------------
   {
     "context": "VimControl && !menu",
     "bindings": {
+      "space -": "pane::SplitAndMoveDown",
+      "space _": "pane::SplitAndMoveRight",
+      "\\": "pane::SplitAndMoveDown",
+      "|": "pane::SplitAndMoveRight",
+      
       "ctrl-h": "workspace::ActivatePaneLeft",
       "ctrl-l": "workspace::ActivatePaneRight",
       "ctrl-k": "workspace::ActivatePaneUp",
@@ -42,10 +48,11 @@
       "ctrl-shift-l": "workspace::SwapPaneRight",
       "ctrl-shift-k": "workspace::SwapPaneUp",
       "ctrl-shift-j": "workspace::SwapPaneDown",
-      "space -": "pane::SplitDown",
-      "space _": "pane::SplitRight",
-      "\\": "pane::SplitDown",
-      "|": "pane::SplitRight",
+      "ctrl-alt-h": ["workspace::MoveItemToPaneInDirection", ["left"]],
+      "ctrl-alt-j": ["workspace::MoveItemToPaneInDirection", ["down"]],
+      "ctrl-alt-k": ["workspace::MoveItemToPaneInDirection", ["up"]],
+      "ctrl-alt-l": ["workspace::MoveItemToPaneInDirection", ["right"]],
+      
       "ctrl-b": "workspace::ToggleLeftDock"
     }
   },
@@ -56,6 +63,23 @@
       "ctrl-l": "workspace::ActivatePaneRight",
       "ctrl-k": "workspace::ActivatePaneUp",
       "ctrl-j": "workspace::ActivatePaneDown"
+    }
+  },
+  //-------------------------------- 🖊️ Tabs --------------------------------
+  {
+    "context": "VimControl && !menu",
+    "bindings": {
+      "t l": "pane::ActivateNextItem",
+      "t h": "pane::ActivatePreviousItem",
+      "t shift-l": "pane::ActivateLastItem",
+      "t [": "pane::SwapItemLeft",
+      "t ]": "pane::SwapItemRight",
+      
+      "t ;": "pane::TogglePreviewTab",
+      "t '": "pane::TogglePinTab",
+      
+      "t o": "tab_switcher::OpenInActivePane",
+      "t w": "tab_switcher::ToggleAll",
     }
   },
   //-------------------------------- 📚️ Menu navigations --------------------------------
@@ -72,7 +96,7 @@
       "ctrl-k": "editor::ContextMenuPrevious"
     }
   },
-  //-------------------------------- Finder --------------------------------
+  //-------------------------------- 🔍 Finder --------------------------------
   {
     "context": "Picker > Editor",
     "bindings": {
@@ -136,23 +160,10 @@
   {
     "context": "VimControl && !menu",
     "bindings": {
-      "t l": "pane::ActivateNextItem",
-      "t h": "pane::ActivatePreviousItem",
-      "t [": "pane::SwapItemLeft",
-      "t ]": "pane::SwapItemRight",
-      "t ;": "pane::TogglePreviewTab",
-      "t p": "pane::TogglePinTab",
-      
       "space z": "workspace::ToggleZoom",
       
       "ctrl-shift-[": "editor::Fold", // Do we really need this?
       "ctrl-shift-]": "editor::UnfoldLines" // Do we really need this?
     }
   },
-  {
-    "context": "VimControl && !menu && Editor",
-    "bindings": {
-      "space l f": "editor::Format"
-    }
-  }
 ]
