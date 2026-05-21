@@ -17,42 +17,39 @@ image_bound = [8192, 4608] # 8K resolution
 
 [plugin]
 prepend_fetchers = [
-  { id = "git", name = "*", run = "git" },
-  { id = "git", name = "*/", run = "git" },
+  # Git: https://github.com/yazi-rs/plugins/tree/main/git.yazi
+  { url = "*", run = "git", group = "git" },
+  { url = "*/", run = "git", group = "git" },
 ]
-prepend_previewers = [
-  # DuckDB previewer
-  # { name = "*.csv", run = "duckdb" },
-  # { name = "*.tsv", run = "duckdb" },
-  # { name = "*.json", run = "duckdb" },
-  # { name = "*.parquet", run = "duckdb" },
-  # { name = "*.txt", run = "duckdb" },
-  # { name = "*.xlsx", run = "duckdb" },
-  # { name = "*.db", run = "duckdb" },
-  # { name = "*.duckdb", run = "duckdb" },
 
-  # Archive previewer
-  { mime = "application/*zip", run = "ouch" },
-  { mime = "application/x-tar", run = "ouch" },
-  { mime = "application/x-bzip2", run = "ouch" },
-  { mime = "application/x-7z-compressed", run = "ouch" },
-  { mime = "application/x-rar", run = "ouch" },
-  { mime = "application/vnd.rar", run = "ouch" },
-  { mime = "application/x-xz", run = "ouch" },
-  { mime = "application/xz", run = "ouch" },
-  { mime = "application/x-zstd", run = "ouch" },
-  { mime = "application/zstd", run = "ouch" },
-  { mime = "application/java-archive", run = "ouch" },
+prepend_previewers = [
+  # DuckDB previewer: https://github.com/wylie102/duckdb.yazi
+  # { url = "*.csv", run = "duckdb" },
+  # { url = "*.tsv", run = "duckdb" },
+  # { url = "*.json", run = "duckdb" },
+  # { url = "*.parquet", run = "duckdb" },
+  # { url = "*.txt", run = "duckdb" },
+  # { url = "*.xlsx", run = "duckdb" },
+  # { url = "*.db", run = "duckdb" },
+  # { url = "*.duckdb", run = "duckdb" },
+
+  # Ouch: https://github.com/ndtoan96/ouch.yazi
+  {
+    mime = "application/{*zip,tar,bzip2,7z*,rar,xz,zstd,java-archive}",
+    run = "ouch",
+  },
 ]
+
 #append_previewers = [
-#  { name = "*", run = "hexyl" },
+#  { url = "*", run = "hexyl" },
 #]
 
 prepend_preloaders = [
-  # { name = "*.csv", run = "duckdb", multi = false },  
-  # { name = "*.tsv", run = "duckdb", multi = false },  
-  # { name = "*.json", run = "duckdb", multi = false },  
-  # { name = "*.parquet", run = "duckdb", multi = false },
-  # { name = "*.txt", run = "duckdb", multi = false },  
-  # { name = "*.xlsx", run = "duckdb", multi = false }
+  # DuckDB previewer: https://github.com/wylie102/duckdb.yazi
+  # { url = "*.csv", run = "duckdb", multi = false },  
+  # { url = "*.tsv", run = "duckdb", multi = false },  
+  # { url = "*.json", run = "duckdb", multi = false },  
+  # { url = "*.parquet", run = "duckdb", multi = false },
+  # { url = "*.txt", run = "duckdb", multi = false },  
+  # { url = "*.xlsx", run = "duckdb", multi = false }
 ]
