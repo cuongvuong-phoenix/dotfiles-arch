@@ -9,13 +9,13 @@
 {
   "cli_default_open_behavior": "new_window",
   "outline_panel": {
-    "dock": "left"
+    "dock": "left",
   },
   "collaboration_panel": {
-    "dock": "left"
+    "dock": "left",
   },
   "git_panel": {
-    "dock": "left"
+    "dock": "left",
   },
   "edit_predictions": {
     "provider": "none",
@@ -88,7 +88,16 @@
       },
     },
     "Ruby": {
-      "language_servers": ["ruby-lsp", "rubocop", "sorbet", "!solargraph", "!steep", "!kanayago", "..."],
+      "language_servers": [
+        "ruby-lsp",
+        "rubocop",
+        "sorbet",
+        "!solargraph",
+        "!steep",
+        "!kanayago",
+        "!fuzzy-ruby-server",
+        "...",
+      ],
     },
     "JavaScript": {
       "formatter": [], // Use ESLint as the only formatter

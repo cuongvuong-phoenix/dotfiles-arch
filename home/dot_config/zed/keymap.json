@@ -12,34 +12,34 @@
     "bindings": {
       "ctrl-c": "editor::Copy", // vim default: return to normal mode
       "ctrl-x": "editor::Cut", // vim default: decrement
-      "ctrl-v": "editor::Paste" // vim default: visual block mode
-    }
+      "ctrl-v": "editor::Paste", // vim default: visual block mode
+    },
   },
   {
     "context": "vim_mode == visual",
     "bindings": {
       "shift-s": "vim::PushAddSurrounds",
-      "ctrl-c": "vim::VisualYank"
+      "ctrl-c": "vim::VisualYank",
       // "ctrl-v": "vim::Paste" // Don't know why using this make deletions become normal yanks!?
-    }
+    },
   },
   //-------------------------------- 🤖 LSP  --------------------------------
   {
     "context": "VimControl && !menu",
     "bindings": {
       "g shift-w": "project_symbols::Toggle",
-      "space l f": "editor::Format"
-    }
+      "space l f": "editor::Format",
+    },
   },
   //-------------------------------- 🪟 Panes --------------------------------
   {
     "context": "VimControl && !menu",
     "bindings": {
-      "space -": "pane::SplitAndMoveDown",
-      "space _": "pane::SplitAndMoveRight",
-      "\\": "pane::SplitAndMoveDown",
-      "|": "pane::SplitAndMoveRight",
-      
+      "space -": "pane::SplitDown",
+      "space _": "pane::SplitRight",
+      "\\": "pane::SplitDown",
+      "|": "pane::SplitRight",
+
       "ctrl-h": "workspace::ActivatePaneLeft",
       "ctrl-l": "workspace::ActivatePaneRight",
       "ctrl-k": "workspace::ActivatePaneUp",
@@ -52,9 +52,9 @@
       "ctrl-alt-j": ["workspace::MoveItemToPaneInDirection", ["down"]],
       "ctrl-alt-k": ["workspace::MoveItemToPaneInDirection", ["up"]],
       "ctrl-alt-l": ["workspace::MoveItemToPaneInDirection", ["right"]],
-      
-      "ctrl-b": "workspace::ToggleLeftDock"
-    }
+
+      "ctrl-b": "workspace::ToggleLeftDock",
+    },
   },
   {
     "context": "Dock",
@@ -62,8 +62,8 @@
       "ctrl-h": "workspace::ActivatePaneLeft",
       "ctrl-l": "workspace::ActivatePaneRight",
       "ctrl-k": "workspace::ActivatePaneUp",
-      "ctrl-j": "workspace::ActivatePaneDown"
-    }
+      "ctrl-j": "workspace::ActivatePaneDown",
+    },
   },
   //-------------------------------- 🖊️ Tabs --------------------------------
   {
@@ -74,53 +74,53 @@
       "t shift-l": "pane::ActivateLastItem",
       "t [": "pane::SwapItemLeft",
       "t ]": "pane::SwapItemRight",
-      
+
       "t ;": "pane::TogglePreviewTab",
       "t '": "pane::TogglePinTab",
-      
-      "t o": "tab_switcher::OpenInActivePane",
-      "t w": "tab_switcher::ToggleAll",
-    }
+
+      "t w": "tab_switcher::OpenInActivePane",
+      "t e": "tab_switcher::ToggleAll",
+    },
   },
   //-------------------------------- 📚️ Menu navigations --------------------------------
   {
     "bindings": {
       "ctrl-j": "menu::SelectNext",
-      "ctrl-k": "menu::SelectPrevious"
-    }
+      "ctrl-k": "menu::SelectPrevious",
+    },
   },
   {
     "context": "Editor && (showing_code_actions || showing_completions)",
     "bindings": {
       "ctrl-j": "editor::ContextMenuNext",
-      "ctrl-k": "editor::ContextMenuPrevious"
-    }
+      "ctrl-k": "editor::ContextMenuPrevious",
+    },
   },
   //-------------------------------- 🔍 Finder --------------------------------
   {
     "context": "Picker > Editor",
     "bindings": {
-      "ctrl-[": "menu::Cancel"
-    }
+      "ctrl-[": "menu::Cancel",
+    },
   },
   {
     "context": "BufferSearchBar && !in_replace",
     "bindings": {
-      "ctrl-[": "buffer_search::Dismiss"
-    }
+      "ctrl-[": "buffer_search::Dismiss",
+    },
   },
   {
     "context": "ProjectSearchBar",
     "bindings": {
-      "ctrl-[": "project_search::ToggleFocus"
-    }
+      "ctrl-[": "project_search::ToggleFocus",
+    },
   },
   // Mimic AstroNvim
   {
     "context": "VimControl && !menu",
     "bindings": {
-      "space f w": "pane::DeploySearch"
-    }
+      "space f w": "pane::DeploySearch",
+    },
   },
   //-------------------------------- 📂 File Explorer --------------------------------
   {
@@ -132,8 +132,8 @@
       "x": "project_panel::Cut",
       "p": "project_panel::Paste",
       "a": "project_panel::NewFile",
-      "shift-a": "project_panel::NewDirectory"
-    }
+      "shift-a": "project_panel::NewDirectory",
+    },
   },
   //-------------------------------- Others --------------------------------
   {
@@ -141,8 +141,8 @@
       "ctrl-q": "pane::CloseActiveItem",
       "ctrl-alt-s": "workspace::SaveWithoutFormat",
       "alt-s": "workspace::SaveWithoutFormat",
-      "ctrl-shift-w": "workspace::CloseWindow"
-    }
+      "ctrl-shift-w": "workspace::CloseWindow",
+    },
   },
   {
     "context": "Editor",
@@ -154,16 +154,16 @@
 
       "alt-d": "vim::SelectNext",
       "shift-alt-k": "editor::AddSelectionAbove",
-      "shift-alt-j": "editor::AddSelectionBelow"
-    }
+      "shift-alt-j": "editor::AddSelectionBelow",
+    },
   },
   {
     "context": "VimControl && !menu",
     "bindings": {
       "space z": "workspace::ToggleZoom",
-      
+
       "ctrl-shift-[": "editor::Fold", // Do we really need this?
-      "ctrl-shift-]": "editor::UnfoldLines" // Do we really need this?
-    }
+      "ctrl-shift-]": "editor::UnfoldLines", // Do we really need this?
+    },
   },
 ]
