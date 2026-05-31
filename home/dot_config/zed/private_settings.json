@@ -122,6 +122,9 @@
       //   "...",
       // ],
     },
+    "Python": {
+      "tab_size": 4,
+    },
     "SQL": {
       "formatter": {
         "external": {
