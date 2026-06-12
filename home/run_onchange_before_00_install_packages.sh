@@ -22,7 +22,7 @@ PACKAGES=(
   "swww"
 
   "adw-gtk-theme" # Force correct (dark) theme for some stubborn apps (e.g. `gnome-keyring` prompt)
-  "whitesur-gtk-theme"
+  "sassc" # For Colloid-gtk-theme (https://github.com/vinceliuice/Colloid-gtk-theme#)
 
   "qt5ct"
   "qt6ct-kde"
