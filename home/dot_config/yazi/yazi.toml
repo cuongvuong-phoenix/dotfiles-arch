@@ -2,12 +2,6 @@
 show_hidden = true
 linemode = "size"
 
-[opener]
-extract = [
-  { run = 'ouch d -y "$@"', desc = "Extract here with ouch", for = "unix" },
-  { run = 'ouch d -y %*', desc = "Extract here with ouch", for = "windows" },
-]
-
 [preview]
 max_width = 1920
 max_height = 1080
@@ -32,12 +26,6 @@ prepend_previewers = [
   # { url = "*.xlsx", run = "duckdb" },
   # { url = "*.db", run = "duckdb" },
   # { url = "*.duckdb", run = "duckdb" },
-
-  # Ouch: https://github.com/ndtoan96/ouch.yazi
-  {
-    mime = "application/{*zip,tar,bzip2,7z*,rar,xz,zstd,java-archive}",
-    run = "ouch",
-  },
 ]
 
 #append_previewers = [
