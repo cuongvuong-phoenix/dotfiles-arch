@@ -4,5 +4,5 @@ spawn-at-startup "awww-daemon"
 spawn-at-startup "/usr/lib/polkit-kde-authentication-agent-1"
 // Auto-recognize correct apps when opening files in Dolphin:
 // https://wiki.archlinux.org/title/Dolphin#Dolphin_cannot_find_applications_(when_running_under_another_window_manager)
-spawn-at-startup "env" "XDG_MENU_PREFIX=plasma-" "kbuildsycoca6" 
+spawn-sh-at-startup "XDG_MENU_PREFIX=arch- kbuildsycoca6 --noincremental"
 spawn-at-startup "wayscriber" "--daemon" "--no-tray"
