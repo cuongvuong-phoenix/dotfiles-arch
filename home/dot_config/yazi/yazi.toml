@@ -41,3 +41,19 @@ prepend_preloaders = [
   # { url = "*.txt", run = "duckdb", multi = false },  
   # { url = "*.xlsx", run = "duckdb", multi = false }
 ]
+
+# Run `.sh` files
+[[opener.run_sh]]
+run = 'sh "$@"'
+block = true
+desc = "Run in Terminal"
+
+[[opener.run_sh]]
+run = 'sh "$@"'
+orphan = true
+desc = "Run in Background"
+
+[[open.prepend_rules]]
+url = "*.sh"
+use  = [ "edit", "run_sh" ]
+

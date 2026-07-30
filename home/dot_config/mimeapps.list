@@ -1,4 +1,3 @@
-
 [Default Applications]
 image/jpeg=qimgv.desktop
 image/gif=qimgv.desktop
@@ -6,12 +5,10 @@ image/png=qimgv.desktop
 image/bmp=qimgv.desktop
 image/webp=qimgv.desktop
 video/webm=qimgv.desktop
-
 application/pdf=okularApplication_pdf.desktop
 application/x-gzpdf=okularApplication_pdf.desktop
 application/x-bzpdf=okularApplication_pdf.desktop
 application/x-wwf=okularApplication_pdf.desktop
-
 application/rdf+xml=brave-browser.desktop
 application/rss+xml=brave-browser.desktop
 application/xhtml+xml=brave-browser.desktop
@@ -25,7 +22,6 @@ x-scheme-handler/ipfs=brave-browser.desktop
 x-scheme-handler/ipns=brave-browser.desktop
 x-scheme-handler/unknown=brave-browser.desktop
 x-scheme-handler/about=brave-browser.desktop
-
 x-scheme-handler/claude-cli=claude-code-url-handler.desktop
 x-scheme-handler/slack=slack.desktop
 x-scheme-handler/fdm=freedownloadmanager_fdm_up.desktop
