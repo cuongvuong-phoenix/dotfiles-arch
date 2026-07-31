@@ -36,7 +36,7 @@ PACKAGES=(
   "yazi"
   "xdg-desktop-portal-termfilechooser-hunkyburrito-git" # Use `yazi` for the File Chooser portal
 
-  "microsoft-edge-stable-bin"
+  "brave-bin"
 
   "ttf-jetbrains-mono-nerd"
   "bibata-cursor-theme-bin"
