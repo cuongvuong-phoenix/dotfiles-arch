@@ -79,6 +79,7 @@
     "Ruby": ["rbi"],
   },
   "tab_size": 2,
+  "format_on_save": "on",
 
   "languages": {
     "Rust": {
@@ -116,11 +117,6 @@
       "code_actions_on_format": {
         "source.fixAll.eslint": true,
       },
-      // "language_servers": [
-      //   // Hybrid Mode
-      //   "vtsls",
-      //   "...",
-      // ],
     },
     "Python": {
       "tab_size": 4,
@@ -214,13 +210,6 @@
     //     ]
     //   }
     // },
-
-    // Biome
-    "biome": {
-      "settings": {
-        "require_config_file": true,
-      },
-    },
 
     // Ruby
     "ruby-lsp": {
