@@ -3,7 +3,6 @@
 
 ---@type LazySpec
 return {
-  { import = "astrocommunity.pack.toml" },
   {
     "alker0/chezmoi.vim",
     lazy = false,

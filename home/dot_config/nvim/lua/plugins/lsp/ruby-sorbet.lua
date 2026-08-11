@@ -5,9 +5,7 @@ return {
     optional = true,
     ---@type AstroCoreOpts
     opts = {
-      treesitter = {
-        ensure_installed = { "ruby" }
-      }
+      treesitter = { ensure_installed = { "ruby" } },
     },
   },
   {

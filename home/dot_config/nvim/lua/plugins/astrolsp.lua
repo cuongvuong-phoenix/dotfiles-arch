@@ -26,6 +26,7 @@ return {
       },
       disabled = { -- disable formatting capabilities for the listed language servers
         "lua_ls", -- always use `stylua`
+        "taplo", -- `taplo` is deprecated. Use `tombi` instead.
         "volar", -- always use linter/formatter
         "vtsls", -- always use linter/formatter
         -- disable lua_ls formatting capability if you want to use StyLua to format your lua code
@@ -59,6 +60,7 @@ return {
 
       -- the key is the server that is being setup with `vim.lsp.config`
       emmet_ls = false, -- setting a handler to false will disable the set up of that language server
+      taplo = false, -- `taplo` is deprecated. Use `tombi` instead.
     },
     -- Configure buffer local auto commands to add when attaching a language server
     autocmds = {

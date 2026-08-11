@@ -13,7 +13,6 @@ return {
   { import = "astrocommunity.comment.ts-comments-nvim" },
   -- Languages
   { import = "astrocommunity.pack.lua" },
-  { import = "astrocommunity.pack.toml" },
   { import = "astrocommunity.pack.yaml" },
   { import = "astrocommunity.pack.json" },
   { import = "astrocommunity.pack.just" },
