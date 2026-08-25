@@ -25,6 +25,8 @@ gui:
     searchingActiveBorderColor:
       - "#f9e2af"
 git:
+  commit:
+    autoWrapWidth: 88
   diffRenderers:
     - colorArg: always
       command: delta --dark --paging=never
