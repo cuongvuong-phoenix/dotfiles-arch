@@ -43,6 +43,9 @@ prepend_keymap = [
     run = 'shell -- awww img "$0"; dms ipc call wallpaper set "$0"',
     desc = "Change wallpaper using `awww`",
   },
+  { on = "R", run = "plugin rsync", desc = "Copy files using rsync" },
+  { on = ";", run = "plugin bunny", desc = "Start bunny.yazi" },
+  { on = "'", run = "plugin bunny fuzzy", desc = "Start bunny.yazi fuzzy search" },
   # DuckDB (temporarily disable as it's always stuck at 99% while prefetching)
   # { on = "H",         run = "plugin duckdb -1", # desc = "Scroll one column to the left" }
   # { on = "L",         run = "plugin duckdb +1", # desc = "Scroll one column to the right" }
