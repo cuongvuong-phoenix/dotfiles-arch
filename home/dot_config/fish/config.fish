@@ -34,7 +34,7 @@ set -gx EDITOR nvim
 set -gx BAT_THEME TwoDark
 
 # PNPM
-set -gx PNPM_HOME "/home/bimbal/.local/share/pnpm"
+set -gx PNPM_HOME "~/.local/share/pnpm"
 fish_add_path $PNPM_HOME
 
 # Rust
