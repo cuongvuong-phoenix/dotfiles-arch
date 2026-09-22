@@ -55,6 +55,26 @@ orphan = true
 desc = "Run in Background"
 for = "linux"
 
+# Edit images
+[[opener.edit_image]]
+run = "tensaku --filename %s1"
+orphan = true
+desc = "Edit image"
+for = "linux"
+
+# Copy image to clipboard
+[[opener.copy_image]]
+run = 'wl-copy < %s1; notify-send -a "Yazi" "Copied image to clipboard" "%s1" -i %s1'
+orphan = true
+desc = "Copy image"
+for = "linux"
+
+[[opener.set_as_wallpaper]]
+run = "awww img %s1; dms ipc call wallpaper set %s1"
+orphan = true
+desc = "Set as wallpaper"
+for = "linux"
+
 [[open.prepend_rules]]
 mime = "text/shellscript"
 use = ["edit", "run_sh"]
@@ -63,3 +83,6 @@ use = ["edit", "run_sh"]
 mime = "application/pie-executable"
 use = ["open", "run_sh"]
 
+[[open.prepend_rules]]
+mime = "image/*"
+use = ["open", "edit_image", "copy_image", "set_as_wallpaper"]

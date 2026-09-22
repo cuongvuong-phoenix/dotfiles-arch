@@ -1,0 +1,7 @@
+# https://github.com/jondkinney/tensaku#configuration-file
+
+[general]
+annotation-size-factor = 1.0
+floating-hack = true
+early-exit = true
+output-filename = "~/Pictures/Screenshots/tensaku-%Y-%m-%d_%H:%M:%S"

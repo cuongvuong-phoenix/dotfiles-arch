@@ -192,9 +192,19 @@ binds {
     XF86Launch1 { screenshot; }
     Ctrl+XF86Launch1 { screenshot-screen; }
     Alt+XF86Launch1 { screenshot-window; }
-    Ctrl+Alt+A { spawn "sh" "-c" "grim -t ppm - | satty --filename - --fullscreen --output-filename ~/Pictures/Screenshots/satty-$(date '+%Y%m%d-%H:%M:%S').png"; }
     Ctrl+Print { screenshot-screen; }
     Alt+Print { screenshot-window; }
+    Ctrl+Alt+A hotkey-overlay-title="Screenshot" { spawn-sh "grim -t ppm - | tensaku -"; }
+    Ctrl+Alt+C hotkey-overlay-title="Annotate image from clipboard" {
+        spawn-sh r#"
+            TYPES=$(wl-paste --list-types 2>/dev/null)
+
+            if echo "$TYPES" | grep -qE '^image/'; then
+                MATCH=$(echo "$TYPES" | grep -m1 -E '^image/')
+                wl-paste --type "$MATCH" | tensaku -
+            fi
+        "#;
+    }
 
     // === System Controls ===
     Mod+Escape allow-inhibiting=false { toggle-keyboard-shortcuts-inhibit; }

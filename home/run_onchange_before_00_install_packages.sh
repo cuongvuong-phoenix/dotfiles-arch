@@ -100,7 +100,7 @@ PACKAGES=(
   "libreoffice-still"
   "wayscriber-bin"
   "grim"
-  "satty"
+  "tensaku-bin"
   "qimgv"
   "gimp"
   "vlc"
