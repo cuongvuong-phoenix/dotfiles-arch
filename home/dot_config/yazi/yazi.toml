@@ -56,6 +56,10 @@ desc = "Run in Background"
 for = "linux"
 
 [[open.prepend_rules]]
-url = "*.sh"
-use  = [ "edit", "run_sh" ]
+mime = "text/shellscript"
+use = ["edit", "run_sh"]
+
+[[open.prepend_rules]]
+mime = "application/pie-executable"
+use = ["open", "run_sh"]
 
