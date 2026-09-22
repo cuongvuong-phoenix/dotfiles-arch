@@ -7,7 +7,7 @@ max_width = 1920
 max_height = 1080
 
 [tasks]
-image_bound = [8192, 4608] # 8K resolution
+image_bound = [8192, 4608]  # 8K resolution
 
 [plugin]
 prepend_fetchers = [
@@ -28,30 +28,32 @@ prepend_previewers = [
   # { url = "*.duckdb", run = "duckdb" },
 ]
 
-#append_previewers = [
+# append_previewers = [
 #  { url = "*", run = "hexyl" },
-#]
+# ]
 
 prepend_preloaders = [
   # DuckDB previewer: https://github.com/wylie102/duckdb.yazi
-  # { url = "*.csv", run = "duckdb", multi = false },  
-  # { url = "*.tsv", run = "duckdb", multi = false },  
-  # { url = "*.json", run = "duckdb", multi = false },  
+  # { url = "*.csv", run = "duckdb", multi = false },
+  # { url = "*.tsv", run = "duckdb", multi = false },
+  # { url = "*.json", run = "duckdb", multi = false },
   # { url = "*.parquet", run = "duckdb", multi = false },
-  # { url = "*.txt", run = "duckdb", multi = false },  
+  # { url = "*.txt", run = "duckdb", multi = false },
   # { url = "*.xlsx", run = "duckdb", multi = false }
 ]
 
 # Run `.sh` files
 [[opener.run_sh]]
-run = 'sh "$@"'
+run = "sh %s1"
 block = true
 desc = "Run in Terminal"
+for = "linux"
 
 [[opener.run_sh]]
-run = 'sh "$@"'
+run = "sh %s1"
 orphan = true
 desc = "Run in Background"
+for = "linux"
 
 [[open.prepend_rules]]
 url = "*.sh"
