@@ -25,6 +25,9 @@
     "metrics": false,
   },
   "restore_on_startup": "last_session", // To make reload works as expected...
+  "search": {
+    "search_on_type": false,
+  },
   //-------------------------------- 🎨 UI --------------------------------
   "ui_font_size": 16,
   "theme": "One Dark Pro",
@@ -132,29 +135,33 @@
 
     // ESLint for extra languages
     "JSON": {
+      "formatter": [], // Use ESLint as the only formatter
       "code_actions_on_format": {
         "source.fixAll.eslint": true,
       },
       "language_servers": ["eslint", "..."],
     },
     "JSONC": {
+      "formatter": [], // Use ESLint as the only formatter
       "code_actions_on_format": {
         "source.fixAll.eslint": true,
       },
       "language_servers": ["eslint", "..."],
     },
     "CSS": {
+      "formatter": [], // Use ESLint as the only formatter
       "code_actions_on_format": {
         "source.fixAll.eslint": true,
       },
       "language_servers": ["eslint", "..."],
     },
-    // "YAML": {
-    //   "code_actions_on_format": {
-    //     "source.fixAll.eslint": true,
-    //   },
-    //   "language_servers": ["eslint", "..."],
-    // },
+    "YAML": {
+      "formatter": [], // Use ESLint as the only formatter
+      "code_actions_on_format": {
+        "source.fixAll.eslint": true,
+      },
+      "language_servers": ["eslint", "..."],
+    },
   },
 
   "lsp": {
