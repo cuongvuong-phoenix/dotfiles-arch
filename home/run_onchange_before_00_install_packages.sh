@@ -92,7 +92,7 @@ PACKAGES=(
 
   # File Transfer
   "syncthing"
-  "syncthingtray-qt6"
+  "syncthingtray"
   "qbittorrent"
   "xdman-beta-bin"
 
