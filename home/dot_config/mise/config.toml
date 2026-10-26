@@ -7,5 +7,4 @@ deno = "latest"
 pnpm = "latest"
 
 [settings]
-plugin_autoupdate_last_check_duration = '1 week' # set to 0 to disable updates
 experimental = true
