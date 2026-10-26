@@ -75,6 +75,12 @@ orphan = true
 desc = "Set as wallpaper"
 for = "linux"
 
+[[opener.dedup_lines]]
+run = "python ~/.config/yazi/dedup_lines.py %s"
+orphan = true
+desc = "Dedup lines"
+for = "linux"
+
 [[open.prepend_rules]]
 mime = "text/shellscript"
 use = ["edit", "run_sh"]
@@ -86,3 +92,7 @@ use = ["open", "run_sh"]
 [[open.prepend_rules]]
 mime = "image/*"
 use = ["open", "edit_image", "copy_image", "set_as_wallpaper"]
+
+[[open.prepend_rules]]
+mime = "text/*"
+use = ["edit", "dedup_lines", "reveal"]
