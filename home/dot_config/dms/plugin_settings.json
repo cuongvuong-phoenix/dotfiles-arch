@@ -3,15 +3,13 @@
     "enabled": true,
     "autoStartBreaks": true
   },
-  "emojiLauncher": {
-    "enabled": true,
-    "trigger": ":",
-    "useDMS": false,
-    "pasteOnSelect": false,
-    "recentEmojis": "😅,👉,⏳,✅,😍,🤤,❌,🥰,🥹,💪,✨,💔,❗,🤚,😈,🤗,🙇,🥲,💡,🤣"
-  },
   "calculator": {
     "enabled": true,
     "trigger": "="
+  },
+  "emojiPicker": {
+    "enabled": true,
+    "pickerSize": "620",
+    "emojisPerRow": 10
   }
 }
