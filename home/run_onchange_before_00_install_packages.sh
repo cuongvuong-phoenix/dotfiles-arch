@@ -6,7 +6,7 @@ PACKAGES=(
 
   # IMPORTANT
   "niri"
-  "dms-shell"
+  "dux-shell"
   "quickshell"
   "matugen"
   "polkit-kde-agent"
@@ -44,7 +44,7 @@ PACKAGES=(
   "fcitx5-bamboo"
 
   # Security & Privacy
-  "prek-bin" # `pre-commit` re-engineered in Rust
+  "prek" # `pre-commit` re-engineered in Rust
   "bitwarden"
   "1password"
   "cloudflare-warp-bin"
