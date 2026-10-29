@@ -53,7 +53,6 @@ PACKAGES=(
 
   # Terminal
   "kitty"
-  "alacritty" # For backup after `kitty`
   "tmux"
   "mise"
   "ripgrep"
@@ -98,7 +97,6 @@ PACKAGES=(
 
   # Media & Utilities
   "libreoffice-still"
-  "wayscriber-bin"
   "grim"
   "tensaku-bin"
   "qimgv"
