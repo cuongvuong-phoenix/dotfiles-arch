@@ -58,6 +58,11 @@ use = "stelcodes/bunny"
 rev = "8f3f84e"
 hash = "18a2829738214fe9bca99a2fef19113d"
 
+[[plugin.deps]]
+use = "ndtoan96/ouch"
+rev = "596b666"
+hash = "c2f4f4aca257dcceafa9e3b828dbf1c9"
+
 [[flavor.deps]]
 use = "BennyOe/onedark"
 rev = "668d71d"
