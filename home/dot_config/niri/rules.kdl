@@ -58,7 +58,7 @@ window-rule {
 window-rule {
     match app-id="Comfy Desktop"
 
-    open-maximized true
+    open-maximized-to-edges true
 }
 
 // Floating windows
