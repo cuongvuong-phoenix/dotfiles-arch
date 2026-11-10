@@ -6,7 +6,23 @@
 // To see the default key bindings run `zed: open default keymap`
 // from the command palette.
 [
-  //--------------------------------  📋️ Copy/Paste clipboard (require `use_system_clipboard = "on_yank"`) --------------------------------
+  //-------------------------------- Navigation --------------------------------
+  {
+    "context": "VimControl && !menu",
+    "bindings": {
+      "j": ["vim::Down", { "display_lines": true }],
+      "down": ["vim::Down", { "display_lines": true }],
+      "k": ["vim::Up", { "display_lines": true }],
+      "up": ["vim::Up", { "display_lines": true }],
+      "g j": "vim::Down",
+      "g down": "vim::Down",
+      "g k": "vim::Up",
+      "g up": "vim::Up",
+    },
+  },
+
+  //-------------------------------- 📋️ Copy/Paste clipboard --------------------------------
+  //------------------------ (require `use_system_clipboard = "on_yank"`) --------------------
   {
     "context": "Editor && !menu",
     "bindings": {
@@ -164,6 +180,9 @@
 
       "ctrl-shift-[": "editor::Fold", // Do we really need this?
       "ctrl-shift-]": "editor::UnfoldLines", // Do we really need this?
+
+      // UI/UX toggles
+      "space u w": "editor::ToggleSoftWrap",
     },
   },
 ]
