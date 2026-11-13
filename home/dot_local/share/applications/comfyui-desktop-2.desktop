@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Comfy Desktop
+Exec=/bin/sh -c "\"/opt/Comfy\ Desktop/comfyui-desktop-2\" $(unshare -Ur true 2>/dev/null || echo --no-sandbox) \"$@\"" _ %U
+Terminal=false
+Type=Application
+Icon=comfyui-desktop-2
+StartupWMClass=Comfy Desktop
+Comment=Comfy Desktop
+Categories=AudioVideo;Graphics;3DGraphics;
