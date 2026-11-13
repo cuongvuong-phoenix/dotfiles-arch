@@ -96,6 +96,10 @@
 
       "t w": "tab_switcher::OpenInActivePane",
       "t e": "tab_switcher::ToggleAll",
+      "ctrl-w o": "tab_switcher::Toggle",
+      "ctrl-w ctrl-o": "tab_switcher::Toggle",
+      "ctrl-w i": ["tab_switcher::Toggle", { "select_last": true }],
+      "ctrl-w ctrl-i": ["tab_switcher::Toggle", { "select_last": true }],
     },
   },
   //-------------------------------- 📚️ Menu navigations --------------------------------
