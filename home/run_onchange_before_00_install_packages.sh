@@ -116,6 +116,7 @@ PACKAGES=(
 
   # Extras
   "vivaldi"
+  "vivaldi-ffmpeg-codecs"
 )
 paru -Sy --needed "${PACKAGES[@]}"
 
