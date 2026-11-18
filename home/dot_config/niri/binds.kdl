@@ -194,6 +194,7 @@ binds {
     Alt+XF86Launch1 { screenshot-window; }
     Ctrl+Print { screenshot-screen; }
     Alt+Print { screenshot-window; }
+    Ctrl+Alt+W { screenshot-screen; }
     Ctrl+Alt+A hotkey-overlay-title="Screenshot" { spawn-sh "grim -t ppm - | tensaku -"; }
     Ctrl+Alt+C hotkey-overlay-title="Annotate image from clipboard" {
         spawn-sh r#"

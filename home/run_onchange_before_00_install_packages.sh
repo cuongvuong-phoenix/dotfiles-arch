@@ -93,7 +93,7 @@ PACKAGES=(
   "syncthing"
   "syncthingtray"
   "qbittorrent"
-  "xdman-beta-bin"
+  "xdman"
 
   # Media & Utilities
   "libreoffice-still"
