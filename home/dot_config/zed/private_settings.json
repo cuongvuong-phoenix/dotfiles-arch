@@ -7,6 +7,15 @@
 // custom settings, run `zed: open default settings` from the
 // command palette
 {
+  "agent_servers": {
+    "claude-acp": {
+      "default_config_options": {
+        "model": "opus",
+        "agent": "default",
+      },
+      "type": "registry",
+    },
+  },
   "cli_default_open_behavior": "new_window",
   "outline_panel": {
     "dock": "left",
@@ -17,9 +26,6 @@
   "git_panel": {
     "dock": "left",
   },
-  "edit_predictions": {
-    "provider": "none",
-  },
   "telemetry": {
     "diagnostics": false,
     "metrics": false,
@@ -29,10 +35,11 @@
     "search_on_type": false,
   },
   //-------------------------------- 🎨 UI --------------------------------
-  "ui_font_size": 16,
   "theme": "One Dark Pro",
-  "experimental.theme_overrides": {
-    "search.match_background": "#d19a6620",
+  "theme_overrides": {
+    "One Dark Pro": {
+      "search.match_background": "#d19a6620",
+    },
   },
   "icon_theme": "Material Icon Theme",
   "project_panel": {
@@ -44,7 +51,6 @@
     "git_status": true,
     "show_diagnostics": "all",
   },
-  "buffer_font_size": null,
   "buffer_font_family": "JetBrainsMono Nerd Font",
   "preferred_line_length": 120,
   "wrap_guides": [120],
@@ -56,21 +62,52 @@
   },
   "document_folding_ranges": "on",
   //-------------------------------- 🤖 AI --------------------------------
-  // Disable everything: https://github.com/zed-industries/zed/discussions/16750#discussioncomment-13518876
-  "disable_ai": true,
-  "agent": {
-    "dock": "right",
-    "enabled": false,
+  // "disable_ai": true,
+  "edit_predictions": {
+    "allow_data_collection": "no",
+    "provider": "none",
+    "button": false,
   },
+  "show_edit_predictions": false,
   "language_models": {
-    "anthropic": { "api_url": "" },
-    "google": { "api_url": "" },
-    "ollama": { "api_url": "" },
-    "openai": { "api_url": "" },
-    "open_router": { "api_url": "" },
-    "lmstudio": { "api_url": "" },
-    "deepseek": { "api_url": "" },
-    "mistral": { "api_url": "" },
+    "anthropic": {
+      "api_url": "",
+    },
+    "google": {
+      "api_url": "",
+    },
+    "ollama": {
+      "api_url": "",
+    },
+    "openai": {
+      "api_url": "",
+    },
+    "open_router": {
+      "api_url": "",
+    },
+    "lmstudio": {
+      "api_url": "",
+    },
+    "deepseek": {
+      "api_url": "",
+    },
+    "mistral": {
+      "api_url": "",
+    },
+  },
+  "agent_ui_font_size": 18,
+  "agent_buffer_font_size": 14,
+  "agent": {
+    "use_modifier_to_send": true,
+    "dock": "right",
+    "flexible": false,
+    "default_width": 800,
+    "favorite_models": [],
+    "model_parameters": [],
+    "threads_sidebar": {
+      "default_width": 320.0,
+      "position": "right",
+    },
   },
   //-------------------------------- 🚀 Vim --------------------------------
   "vim_mode": true,
@@ -84,7 +121,6 @@
   },
   "tab_size": 2,
   "format_on_save": "on",
-
   "languages": {
     "Rust": {
       "tab_size": 4,
@@ -129,11 +165,13 @@
       "formatter": {
         "external": {
           "command": "sql-formatter",
-          "arguments": ["--language", "postgresql", "--config", "~/Development/.sql-formatter.json"],
+          "arguments": [
+            "--language", "postgresql",
+            "--config", "~/Development/.sql-formatter.json",
+          ],
         },
       },
     },
-
     // ESLint for extra languages (should be added manually within each local project settings)
     // "JSON": {
     //   "formatter": [], // Use ESLint as the only formatter
@@ -160,7 +198,6 @@
     //   },
     // },
   },
-
   "lsp": {
     // Rust
     "rust-analyzer": {
@@ -181,7 +218,6 @@
         },
       },
     },
-
     // ESLint
     // "eslint": {
     //   "settings": {
@@ -214,7 +250,6 @@
     //     ]
     //   }
     // },
-
     // Ruby
     "ruby-lsp": {
       "initialization_options": {
