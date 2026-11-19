@@ -73,7 +73,7 @@
     },
   },
   {
-    "context": "Dock",
+    "context": "Workspace",
     "bindings": {
       "ctrl-h": "workspace::ActivatePaneLeft",
       "ctrl-l": "workspace::ActivatePaneRight",
@@ -124,7 +124,7 @@
     },
   },
   {
-    "context": "BufferSearchBar && !in_replace",
+    "context": "BufferSearchBar",
     "bindings": {
       "ctrl-[": "buffer_search::Dismiss",
     },
@@ -133,6 +133,13 @@
     "context": "ProjectSearchBar",
     "bindings": {
       "ctrl-[": "project_search::ToggleFocus",
+    },
+  },
+  {
+    "context": "ThreadsSidebar",
+    "use_key_equivalents": true,
+    "bindings": {
+      "ctrl-[": "menu::Cancel",
     },
   },
   // Mimic AstroNvim
@@ -162,6 +169,7 @@
       "ctrl-alt-s": "workspace::SaveWithoutFormat",
       "alt-s": "workspace::SaveWithoutFormat",
       "ctrl-shift-w": "workspace::CloseWindow",
+      "ctrl-alt-'": "multi_workspace::ToggleWorkspaceSidebar",
     },
   },
   {
