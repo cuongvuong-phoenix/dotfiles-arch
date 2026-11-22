@@ -1,6 +1,7 @@
 require("full-border"):setup()
 require("folder-rules"):setup()
 require("status-user-group"):setup()
+require("sduf"):setup()
 require("git"):setup()
 -- require("duckdb"):setup()
 require("dupes"):setup({

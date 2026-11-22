@@ -63,6 +63,11 @@ use = "ndtoan96/ouch"
 rev = "596b666"
 hash = "c2f4f4aca257dcceafa9e3b828dbf1c9"
 
+[[plugin.deps]]
+use = "shafayetejaman/sduf"
+rev = "f43ba4a"
+hash = "5f9b8fcd37fc225437a213c9674a0ffa"
+
 [[flavor.deps]]
 use = "BennyOe/onedark"
 rev = "668d71d"
