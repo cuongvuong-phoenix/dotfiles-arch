@@ -31,6 +31,9 @@ prepend_keymap = [
   # ---------------- Plugins ----------------
   { on = ["c", "r"], run = "plugin path-from-root", desc = "Copy path from git root" },
   { on = "z", run = "plugin zoxide", desc = "Jump to a directory via zoxide" },
+  { on = ["Z", "k"], run = "plugin zoxide-extras add", desc = "Add/increase rank of paths" },
+  { on = ["Z", "j"], run = "plugin zoxide-extras add -1", desc = "Decrease rank of paths" },
+  { on = ["Z", "d"], run = "plugin zoxide-extras remove", desc = "Remove paths" },
   { on = "<C-p>", run = "plugin fzf", desc = "Jump to a file/directory via fzf" },
   { on = "M", run = "plugin toggle-pane max-preview", desc = "Maximize or restore the preview pane" },
   { on = "E", run = "plugin mount", desc = "Open mount manager" },
