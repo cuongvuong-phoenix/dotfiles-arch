@@ -51,6 +51,7 @@ window-rule {
 }
 window-rule {
     match app-id="dev.zed.Zed"
+    match app-id="org.qbittorrent.qBittorrent"
 
     default-column-width { proportion 0.75; }
 }
