@@ -43,7 +43,6 @@ window-rule {
     open-floating false
 }
 window-rule {
-    match app-id="microsoft-edge"
     match app-id="obsidian"
     match app-id="org.telegram.desktop"
 
@@ -73,7 +72,6 @@ window-rule {
     match app-id="steam" title="Add Non-Steam Game"
     match app-id=r#"^xdg-desktop-portal$"#
     match app-id="org.fcitx.fcitx5-config-qt"
-    match app-id="qimgv"
     match app-id=r#"firefox$"# title="^Picture-in-Picture$"
     match app-id="" title="Picture in picture"
     match app-id="zoom"
@@ -82,7 +80,6 @@ window-rule {
     match app-id="Bitwarden"
     match app-id="1password"
     match app-id="jetbrains-studio" title="Welcome to Android Studio"
-    match app-id="msedge-_jbkfoedolllekgbhcbcoahefnbanhhlh-Default"  // Bitwarden extension
     match app-id="vivaldi-stable" title="Vivaldi Settings: General - Vivaldi"
     match app-id="vivaldi-stable" title="Bitwarden - Vivaldi"
     match app-id="xdm-app"
