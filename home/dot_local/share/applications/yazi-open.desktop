@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=Application
+Name=Yazi URL Launcher
+GenericName=File Manager
+Comment=Open URLs with Yazi
+TryExec=kitty
+Exec=kitty -- yazi %f
+Icon=yazi
+Categories=System;FileManager;FileTools;ConsoleOnly
+NoDisplay=true
+MimeType=inode/directory
